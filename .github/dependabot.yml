@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "maven"
+    directory: "block-kit"
+    schedule:
+      interval: "weekly"
+    groups:
+      slack:
+        patterns:
+          - "com.slack.api:*"
