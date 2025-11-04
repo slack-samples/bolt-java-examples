@@ -19,3 +19,4 @@ Read the [docs](https://docs.slack.dev/block-kit/) to learn concepts behind thes
 - **[Rich text](https://docs.slack.dev/reference/block-kit/blocks/rich-text-block)**: Displays formatted, structured representation of text. [Implementation](./src/main/java/blocks/RichText.java).
 - **[Section](https://docs.slack.dev/reference/block-kit/blocks/section-block)**: Displays text, possibly alongside elements. [Implementation](./src/main/java/blocks/Section.java).
 - **[Video](https://docs.slack.dev/reference/block-kit/blocks/video-block)**: Displays an embedded video player. [Implementation](./src/main/java/blocks/Video.java).
+
