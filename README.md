@@ -1,4 +1,4 @@
-# Bolt for Java Showcase
+# Bolt for Java Examples
 
 This collections of examples highlights features of a Slack app in the language of Bolt for Java.
 
