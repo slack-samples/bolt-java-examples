@@ -12,8 +12,7 @@ public class VideoTest {
     public void testExample01() {
         VideoBlock block = Video.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "video",
               "title": {

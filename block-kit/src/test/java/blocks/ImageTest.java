@@ -12,8 +12,7 @@ public class ImageTest {
     public void testExample01() {
         ImageBlock block = Image.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "image",
               "title": {
@@ -32,8 +31,7 @@ public class ImageTest {
     public void testExample02() {
         ImageBlock block = Image.example02();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "image",
               "title": {
@@ -54,8 +52,7 @@ public class ImageTest {
     public void testExample03() {
         ImageBlock block = Image.example03();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "image",
               "title": {

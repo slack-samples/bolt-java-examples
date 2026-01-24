@@ -12,8 +12,7 @@ public class HeaderTest {
     public void testExample01() {
         HeaderBlock block = Header.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "header",
               "text": {

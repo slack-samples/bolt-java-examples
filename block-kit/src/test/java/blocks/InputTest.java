@@ -12,8 +12,7 @@ public class InputTest {
     public void testExample01() {
         InputBlock block = Input.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "input",
               "element": {
