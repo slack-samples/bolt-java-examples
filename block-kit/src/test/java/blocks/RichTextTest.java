@@ -12,8 +12,7 @@ public class RichTextTest {
     public void testExample01() {
         java.util.List<RichTextBlock> blocks = RichText.example01();
         String actual = GsonFactory.createSnakeCase().toJson(blocks);
-        String expected =
-                """
+        String expected = """
             [
               {
                 "type": "rich_text",
@@ -122,8 +121,7 @@ public class RichTextTest {
     public void testExample02() {
         RichTextBlock block = RichText.example02();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "block_id": "block1",
@@ -182,8 +180,7 @@ public class RichTextTest {
     public void testExample03() {
         RichTextBlock block = RichText.example03();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "block_id": "block1",
@@ -271,8 +268,7 @@ public class RichTextTest {
     public void testExample04() {
         RichTextBlock block = RichText.example04();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [
@@ -296,8 +292,7 @@ public class RichTextTest {
     public void testExample05() {
         RichTextBlock block = RichText.example05();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "block_id": "Vrzsu",
@@ -330,8 +325,7 @@ public class RichTextTest {
     public void testExample06() {
         RichTextBlock block = RichText.example06();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [
@@ -354,8 +348,7 @@ public class RichTextTest {
     public void testExample07() {
         RichTextBlock block = RichText.example07();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [
@@ -378,8 +371,7 @@ public class RichTextTest {
     public void testExample08() {
         RichTextBlock block = RichText.example08();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [
@@ -402,8 +394,7 @@ public class RichTextTest {
     public void testExample09() {
         RichTextBlock block = RichText.example09();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [
@@ -428,8 +419,7 @@ public class RichTextTest {
     public void testExample10() {
         RichTextBlock block = RichText.example10();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [
@@ -468,8 +458,7 @@ public class RichTextTest {
     public void testExample11() {
         RichTextBlock block = RichText.example11();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [
@@ -492,8 +481,7 @@ public class RichTextTest {
     public void testExample12() {
         RichTextBlock block = RichText.example12();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [
@@ -516,8 +504,7 @@ public class RichTextTest {
     public void testExample13() {
         RichTextBlock block = RichText.example13();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "rich_text",
               "elements": [

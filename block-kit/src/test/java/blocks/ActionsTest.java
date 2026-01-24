@@ -12,8 +12,7 @@ public class ActionsTest {
     public void testExample01() {
         ActionsBlock block = Actions.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "actions",
               "block_id": "actions1",
@@ -75,8 +74,7 @@ public class ActionsTest {
     public void testExample02() {
         ActionsBlock block = Actions.example02();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "actions",
               "block_id": "actionblock789",

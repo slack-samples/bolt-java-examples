@@ -12,8 +12,7 @@ public class ContextTest {
     public void testExample01() {
         ContextBlock block = Context.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "context",
               "elements": [

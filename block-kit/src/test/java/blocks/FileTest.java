@@ -12,8 +12,7 @@ public class FileTest {
     public void testExample01() {
         FileBlock block = File.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "file",
               "external_id": "ABCD1",

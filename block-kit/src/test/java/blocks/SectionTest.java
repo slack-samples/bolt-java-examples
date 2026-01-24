@@ -12,8 +12,7 @@ public class SectionTest {
     public void testExample01() {
         SectionBlock block = Section.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "section",
               "text": {
@@ -29,8 +28,7 @@ public class SectionTest {
     public void testExample02() {
         SectionBlock block = Section.example02();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "section",
               "text": {
@@ -57,8 +55,7 @@ public class SectionTest {
     public void testExample03() {
         SectionBlock block = Section.example03();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
             {
               "type": "section",
               "text": {

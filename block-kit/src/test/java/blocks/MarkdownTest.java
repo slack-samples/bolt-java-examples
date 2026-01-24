@@ -12,8 +12,7 @@ public class MarkdownTest {
     public void testExample01() {
         MarkdownBlock block = Markdown.example01();
         String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected =
-                """
+        String expected = """
               {
                 "type": "markdown",
                 "text": "**Lots of information here!!**"
