@@ -13,7 +13,7 @@ import java.io.IOException;
 public class ChatPostMessage {
 
     public static void main(String[] args) throws IOException, SlackApiException {
-        // Read a token from the environment variables
+        // Read a token from an environment variable
         String token = System.getenv("SLACK_TOKEN");
 
         // Initialize
