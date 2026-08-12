@@ -19,3 +19,4 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 ### chat
 
 - **[chat.postMessage](https://docs.slack.dev/reference/methods/chat.postmessage)**: Sends a message to a channel. [Implementation](./src/main/java/chat/ChatPostMessage.java).
+
