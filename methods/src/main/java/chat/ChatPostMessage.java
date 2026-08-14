@@ -7,10 +7,6 @@ import com.slack.api.methods.request.chat.ChatPostMessageRequest;
 import com.slack.api.methods.response.chat.ChatPostMessageResponse;
 import java.io.IOException;
 
-/**
- * Sends a message to a channel with the chat.postMessage method.
- * {@link https://docs.slack.dev/reference/methods/chat.postmessage}
- */
 public class ChatPostMessage {
 
     public static void main(String[] args) throws IOException, SlackApiException {
