@@ -8,7 +8,7 @@ Read the [docs](https://docs.slack.dev/apis/web-api/) for explanations of concep
 
 ```sh
 $ cd methods  # Navigate to the project root
-$ slack install --environment local  # Create an app
+$ slack app settings  # Create an app
 $ vim src/main/java/chat/ChatPostMessage.java  # Edit arguments
 $ export SLACK_TOKEN=xoxb-example  # Set if unchanged
 $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the request
