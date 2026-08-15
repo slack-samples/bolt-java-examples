@@ -13,20 +13,13 @@ public class BlocksValidate {
         // Initialize
         MethodsClient methods = Slack.getInstance().methods();
 
-        // Call blocks.validate with a well-formed payload
-        String validBlocks = "[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Hello\"}}]";
-        BlocksValidateResponse valid = methods.blocksValidate(
-                BlocksValidateRequest.builder().blocks(validBlocks).build());
+        // Call the blocks.validate method
+        String blocks = "[{\"type\": \"section\", \"text\": {\"type\": \"plain_text\", \"text\": \"Hello world\"}}]";
+        BlocksValidateRequest request =
+                BlocksValidateRequest.builder().blocks(blocks).build();
+        BlocksValidateResponse response = methods.blocksValidate(request);
 
         // Inspect the response
-        System.out.println(valid);
-
-        // Call blocks.validate with a malformed payload
-        String invalidBlocks = "[{\"type\":\"section\"}]";
-        BlocksValidateResponse invalid = methods.blocksValidate(
-                BlocksValidateRequest.builder().blocks(invalidBlocks).build());
-
-        // Inspect the response
-        System.out.println(invalid);
+        System.out.println(response);
     }
 }
