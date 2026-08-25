@@ -14,10 +14,10 @@ import java.util.Arrays;
 public class BlocksValidate {
 
     public static void main(String[] args) throws IOException, SlackApiException {
-        // Initialize (blocks.validate is unauthenticated, so no token is needed)
+        // Initialize
         MethodsClient methods = Slack.getInstance().methods();
 
-        // Build blocks with the SDK's Block Kit builders and validate them
+        // Call the blocks.validate method
         BlocksValidateRequest request = BlocksValidateRequest.builder()
                 .blocks(Arrays.asList(section(s -> s.text(plainText("Hello world")))))
                 .build();
