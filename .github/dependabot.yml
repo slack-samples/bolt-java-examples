@@ -12,3 +12,11 @@ updates:
       slack:
         patterns:
           - "com.slack.api:*"
+  - package-ecosystem: "maven"
+    directory: "methods"
+    schedule:
+      interval: "daily"
+    groups:
+      slack:
+        patterns:
+          - "com.slack.api:*"
