@@ -4,12 +4,12 @@ on:
     branches:
       - main
   pull_request:
-permissions:
-  contents: read
 jobs:
   test:
     name: "maven@java17"
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
         showcase:
