@@ -22,7 +22,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.6.3</version>
         <configuration>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
         </configuration>
@@ -30,7 +30,7 @@
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
         <artifactId>spotless-maven-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.10.0</version>
         <configuration>
           <formats>
             <format>
@@ -71,7 +71,7 @@
     <dependency>
       <groupId>com.slack.api</groupId>
       <artifactId>slack-api-client</artifactId>
-      <version>1.49.0</version>
+      <version>1.51.0</version>
     </dependency>
   </dependencies>
 </project>
