@@ -7,7 +7,7 @@ import com.slack.api.model.block.element.BlockElements;
 import java.util.List;
 
 /**
- * Displays a card layout with optional icon, title, body, and actions.
+ * Displays content in a card.
  * {@link https://docs.slack.dev/reference/block-kit/blocks/card-block/}
  */
 public class Card {
