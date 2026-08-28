@@ -7,7 +7,7 @@ import com.slack.api.model.block.element.BlockElements;
 import java.util.List;
 
 /**
- * Displays a horizontally scrollable collection of cards.
+ * Displays related card blocks in a horizontally-scrolling container.
  * {@link https://docs.slack.dev/reference/block-kit/blocks/carousel-block/}
  */
 public class Carousel {
