@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class WorkflowButton {
     /**
-     * A section block with a workflow button accessory.
+     * A section block containing a workflow button element.
      */
     public static SectionBlock example01() {
         SectionBlock block =
