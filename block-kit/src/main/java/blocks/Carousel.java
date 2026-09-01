@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Carousel {
     /**
-     * A carousel with three cards.
+     * A carousel of cards describing different departments.
      */
     public static CarouselBlock example01() {
         CarouselBlock block = Blocks.carousel(c -> c.elements(List.of(
