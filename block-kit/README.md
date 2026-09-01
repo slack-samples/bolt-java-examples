@@ -37,7 +37,7 @@ Read the [docs](https://docs.slack.dev/block-kit/) to learn concepts behind thes
 - **[Radio button group](https://docs.slack.dev/reference/block-kit/block-elements/radio-button-group-element)**: Allows users to choose one item from a list of possible options. [Implementation](./src/main/java/elements/RadioButtons.java).
 - **[Rich text input](https://docs.slack.dev/reference/block-kit/block-elements/rich-text-input-element)**: Allows users to enter formatted text in a WYSIWYG composer, offering the same messaging writing experience as in Slack. [Implementation](./src/main/java/elements/RichTextInput.java).
 - **[Select menu](https://docs.slack.dev/reference/block-kit/block-elements/select-menu-element)**: Allows users to choose an option from a drop down menu. [Implementation](./src/main/java/elements/SelectMenu.java).
-- **[Time picker](https://docs.slack.dev/reference/block-kit/block-elements/time-picker-element)**: A time picker element; on desktop a dropdown with free-text entry, on mobile the native time picker UI. [Implementation](./src/main/java/elements/TimePicker.java).
+- **[Time picker](https://docs.slack.dev/reference/block-kit/block-elements/time-picker-element)**: Allows users to enter numerical data into a single-line field. [Implementation](./src/main/java/elements/TimePicker.java).
 - **[URL input](https://docs.slack.dev/reference/block-kit/block-elements/url-input-element)**: Allows user to enter a URL into a single-line field. [Implementation](./src/main/java/elements/UrlInput.java).
 - **[Workflow button](https://docs.slack.dev/reference/block-kit/block-elements/workflow-button-element)**: Allows users to run a link trigger with customizable inputs. [Implementation](./src/main/java/elements/WorkflowButton.java).
 

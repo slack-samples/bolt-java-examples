@@ -8,7 +8,7 @@ import com.slack.api.model.block.SectionBlock;
 import com.slack.api.model.block.element.BlockElements;
 
 /**
- * A time picker element; on desktop a dropdown with free-text entry, on mobile the native time picker UI.
+ * Allows users to enter numerical data into a single-line field.
  * {@link https://docs.slack.dev/reference/block-kit/block-elements/time-picker-element/}
  */
 public class TimePicker {
