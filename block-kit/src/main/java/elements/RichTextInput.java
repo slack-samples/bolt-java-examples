@@ -1,8 +1,7 @@
 package elements;
 
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.composition.DispatchActionConfig;
 import com.slack.api.model.block.element.BlockElements;
 import com.slack.api.model.view.View;
@@ -25,8 +24,8 @@ public class RichTextInput {
                                         .triggerActionsOn(List.of("on_character_entered"))
                                         .build())
                                 .focusOnLoad(true)
-                                .placeholder(plainText("Enter text"))))
-                .label(plainText(l -> l.text("Label").emoji(true)))))));
+                                .placeholder(BlockCompositions.plainText("Enter text"))))
+                .label(BlockCompositions.plainText(l -> l.text("Label").emoji(true)))))));
         return view;
     }
 }

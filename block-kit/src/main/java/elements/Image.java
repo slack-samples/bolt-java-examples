@@ -1,9 +1,8 @@
 package elements;
 
-import static com.slack.api.model.block.composition.BlockCompositions.markdownText;
-
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.SectionBlock;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.composition.SlackFileObject;
 import com.slack.api.model.block.element.BlockElements;
 
@@ -17,7 +16,7 @@ public class Image {
      */
     public static SectionBlock example01() {
         SectionBlock block = Blocks.section(s -> s.blockId("section567")
-                .text(markdownText("This is a section block with an accessory image."))
+                .text(BlockCompositions.markdownText("This is a section block with an accessory image."))
                 .accessory(BlockElements.image(
                         i -> i.imageUrl("https://pbs.twimg.com/profile_images/625633822235693056/lNGUneLX_400x400.jpg")
                                 .altText("cute cat"))));
@@ -29,7 +28,7 @@ public class Image {
      */
     public static SectionBlock example02() {
         SectionBlock block = Blocks.section(s -> s.blockId("section567")
-                .text(markdownText("This is a section block with an accessory image."))
+                .text(BlockCompositions.markdownText("This is a section block with an accessory image."))
                 .accessory(BlockElements.image(i -> i.slackFile(SlackFileObject.builder()
                                 .url("https://files.slack.com/files-pri/T0123456-F0123456/xyz.png")
                                 .build())
@@ -42,7 +41,7 @@ public class Image {
      */
     public static SectionBlock example03() {
         SectionBlock block = Blocks.section(s -> s.blockId("section567")
-                .text(markdownText("This is a section block with an accessory image."))
+                .text(BlockCompositions.markdownText("This is a section block with an accessory image."))
                 .accessory(BlockElements.image(i -> i.slackFile(
                                 SlackFileObject.builder().id("F01234567").build())
                         .altText("Slack file object."))));
