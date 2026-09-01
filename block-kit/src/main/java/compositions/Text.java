@@ -1,4 +1,4 @@
-package compositionobjects;
+package compositions;
 
 import static com.slack.api.model.block.composition.BlockCompositions.markdownText;
 

@@ -22,13 +22,13 @@ Read the [docs](https://docs.slack.dev/block-kit/) to learn concepts behind thes
 
 ### Composition objects
 
-- **[Confirmation dialog](https://docs.slack.dev/reference/block-kit/composition-objects/confirmation-dialog-object)**: Defines a dialog that adds a confirmation step to interactive elements. [Implementation](./src/main/java/compositionobjects/ConfirmationDialog.java).
-- **[Conversation filter](https://docs.slack.dev/reference/block-kit/composition-objects/conversation-filter-object)**: Defines a filter for the list of options in a conversation selector menu. [Implementation](./src/main/java/compositionobjects/ConversationFilter.java).
-- **[Dispatch action configuration](https://docs.slack.dev/reference/block-kit/composition-objects/dispatch-action-configuration-object)**: Defines when a plain-text input element will return a `block_actions` interaction payload. [Implementation](./src/main/java/compositionobjects/DispatchActionConfiguration.java).
-- **[Option](https://docs.slack.dev/reference/block-kit/composition-objects/option-object)**: Defines a single item in a number of item selection elements. [Implementation](./src/main/java/compositionobjects/Option.java).
-- **[Option group](https://docs.slack.dev/reference/block-kit/composition-objects/option-group-object)**: Defines a way to group options in a menu. [Implementation](./src/main/java/compositionobjects/OptionGroup.java).
-- **[Slack file](https://docs.slack.dev/reference/block-kit/composition-objects/slack-file-object)**: Defines an object containing Slack file information to be used in an image block or image element. [Implementation](./src/main/java/compositionobjects/SlackFile.java).
-- **[Text](https://docs.slack.dev/reference/block-kit/composition-objects/text-object)**: Defines an object containing some text. [Implementation](./src/main/java/compositionobjects/Text.java).
-- **[Trigger](https://docs.slack.dev/reference/block-kit/composition-objects/trigger-object)**: Defines an object containing trigger information. [Implementation](./src/main/java/compositionobjects/Trigger.java).
-- **[Workflow](https://docs.slack.dev/reference/block-kit/composition-objects/workflow-object)**: Defines an object containing workflow information. [Implementation](./src/main/java/compositionobjects/Workflow.java).
+- **[Confirmation dialog](https://docs.slack.dev/reference/block-kit/composition-objects/confirmation-dialog-object)**: Defines a dialog that adds a confirmation step to interactive elements. [Implementation](./src/main/java/compositions/ConfirmationDialog.java).
+- **[Conversation filter](https://docs.slack.dev/reference/block-kit/composition-objects/conversation-filter-object)**: Defines a filter for the list of options in a conversation selector menu. [Implementation](./src/main/java/compositions/ConversationFilter.java).
+- **[Dispatch action configuration](https://docs.slack.dev/reference/block-kit/composition-objects/dispatch-action-configuration-object)**: Defines when a plain-text input element will return a `block_actions` interaction payload. [Implementation](./src/main/java/compositions/DispatchActionConfiguration.java).
+- **[Option](https://docs.slack.dev/reference/block-kit/composition-objects/option-object)**: Defines a single item in a number of item selection elements. [Implementation](./src/main/java/compositions/Option.java).
+- **[Option group](https://docs.slack.dev/reference/block-kit/composition-objects/option-group-object)**: Defines a way to group options in a menu. [Implementation](./src/main/java/compositions/OptionGroup.java).
+- **[Slack file](https://docs.slack.dev/reference/block-kit/composition-objects/slack-file-object)**: Defines an object containing Slack file information to be used in an image block or image element. [Implementation](./src/main/java/compositions/SlackFile.java).
+- **[Text](https://docs.slack.dev/reference/block-kit/composition-objects/text-object)**: Defines an object containing some text. [Implementation](./src/main/java/compositions/Text.java).
+- **[Trigger](https://docs.slack.dev/reference/block-kit/composition-objects/trigger-object)**: Defines an object containing trigger information. [Implementation](./src/main/java/compositions/Trigger.java).
+- **[Workflow](https://docs.slack.dev/reference/block-kit/composition-objects/workflow-object)**: Defines an object containing workflow information. [Implementation](./src/main/java/compositions/Workflow.java).
 

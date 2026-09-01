@@ -1,4 +1,4 @@
-package compositionobjects;
+package compositions;
 
 import static com.slack.api.model.block.composition.BlockCompositions.markdownText;
 import static com.slack.api.model.block.composition.BlockCompositions.plainText;
@@ -10,12 +10,12 @@ import com.slack.api.model.block.element.BlockElements;
 import java.util.List;
 
 /**
- * Defines an object containing workflow information.
- * {@link https://docs.slack.dev/reference/block-kit/composition-objects/workflow-object/}
+ * Defines an object containing trigger information.
+ * {@link https://docs.slack.dev/reference/block-kit/composition-objects/trigger-object/}
  */
-public class Workflow {
+public class Trigger {
     /**
-     * A section block with a workflow button whose workflow carries a trigger.
+     * A section block with a workflow button whose trigger carries customizable input parameters.
      */
     public static SectionBlock example01() {
         SectionBlock block =
