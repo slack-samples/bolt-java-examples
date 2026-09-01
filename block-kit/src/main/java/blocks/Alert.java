@@ -10,7 +10,7 @@ import com.slack.api.model.block.composition.BlockCompositions;
  */
 public class Alert {
     /**
-     * An informational alert.
+     * An informational alert block.
      */
     public static AlertBlock example01() {
         AlertBlock block =
