@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class MultiSelectMenu {
     /**
-     * A section block with a multi-select menu of static options.
+     * A section block containing a static multi-select menu.
      */
     public static SectionBlock example01() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")
@@ -39,7 +39,7 @@ public class MultiSelectMenu {
     }
 
     /**
-     * A section block with a multi-select menu of options loaded from an external source.
+     * A multi-select menu in a section block with an external data source.
      */
     public static SectionBlock example02() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")
@@ -51,7 +51,7 @@ public class MultiSelectMenu {
     }
 
     /**
-     * A section block with a multi-select menu of users.
+     * A multi-select menu in a section block showing a list of users.
      */
     public static SectionBlock example03() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")
@@ -62,7 +62,7 @@ public class MultiSelectMenu {
     }
 
     /**
-     * A section block with a multi-select menu of conversations.
+     * A multi-select menu in a section block showing a list of conversations.
      */
     public static SectionBlock example04() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")
@@ -73,7 +73,7 @@ public class MultiSelectMenu {
     }
 
     /**
-     * A section block with a multi-select menu of channels.
+     * A multi-select menu in a section block showing a list of channels.
      */
     public static SectionBlock example05() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")

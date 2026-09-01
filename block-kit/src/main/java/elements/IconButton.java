@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class IconButton {
     /**
-     * A context actions block with an icon button element.
+     * A context actions block with an icon button.
      */
     public static ContextActionsBlock example01() {
         ContextActionsBlock block = Blocks.contextActions(List.of(BlockElements.iconButton(ib -> ib.icon("trash")

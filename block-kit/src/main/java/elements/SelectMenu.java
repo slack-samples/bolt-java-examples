@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class SelectMenu {
     /**
-     * A section block with a select menu of static options.
+     * A section block with a static select menu accessory.
      */
     public static SectionBlock example01() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")
@@ -39,7 +39,7 @@ public class SelectMenu {
     }
 
     /**
-     * A section block with a select menu of options loaded from an external source.
+     * A section block with an external select menu accessory.
      */
     public static SectionBlock example02() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")
@@ -51,7 +51,7 @@ public class SelectMenu {
     }
 
     /**
-     * A section block with a select menu of users.
+     * A section block with a users select menu accessory.
      */
     public static SectionBlock example03() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")
@@ -62,7 +62,7 @@ public class SelectMenu {
     }
 
     /**
-     * A section block with a select menu of conversations.
+     * A section block with a conversations select menu accessory.
      */
     public static SectionBlock example04() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")
@@ -73,7 +73,7 @@ public class SelectMenu {
     }
 
     /**
-     * A section block with a select menu of channels.
+     * A section block with a channels select menu accessory.
      */
     public static SectionBlock example05() {
         SectionBlock block = Blocks.section(s -> s.blockId("section678")

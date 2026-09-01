@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class RadioButtons {
     /**
-     * A section block with a radio button group accessory.
+     * A section block with a radio buttons accessory.
      */
     public static SectionBlock example01() {
         SectionBlock block = Blocks.section(s -> s.text(plainText("Check out these rad radio buttons"))

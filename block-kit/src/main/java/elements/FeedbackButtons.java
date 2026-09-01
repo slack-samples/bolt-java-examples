@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class FeedbackButtons {
     /**
-     * A context actions block with a feedback buttons element.
+     * A context actions block with feedback buttons.
      */
     public static ContextActionsBlock example01() {
         ContextActionsBlock block =

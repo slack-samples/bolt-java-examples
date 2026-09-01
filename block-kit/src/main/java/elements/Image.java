@@ -25,7 +25,7 @@ public class Image {
     }
 
     /**
-     * A section block with an image accessory using a slack_file url.
+     * An image block using slack_file with a url.
      */
     public static SectionBlock example02() {
         SectionBlock block = Blocks.section(s -> s.blockId("section567")
@@ -38,7 +38,7 @@ public class Image {
     }
 
     /**
-     * A section block with an image accessory using a slack_file id.
+     * An image block using slack_file with a id.
      */
     public static SectionBlock example03() {
         SectionBlock block = Blocks.section(s -> s.blockId("section567")

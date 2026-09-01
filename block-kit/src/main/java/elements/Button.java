@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class Button {
     /**
-     * A regular button.
+     * A regular interactive button.
      */
     public static ButtonElement example01() {
         ButtonElement element = BlockElements.button(
@@ -24,7 +24,7 @@ public class Button {
     }
 
     /**
-     * A button using the primary style.
+     * A button with a primary style attribute.
      */
     public static ButtonElement example02() {
         ButtonElement element = BlockElements.button(b ->
@@ -33,7 +33,7 @@ public class Button {
     }
 
     /**
-     * A button that opens a link.
+     * A link button.
      */
     public static ButtonElement example03() {
         ButtonElement element =
@@ -42,7 +42,7 @@ public class Button {
     }
 
     /**
-     * Buttons hosted in a section accessory and an actions block.
+     * The button element used inside either the section or actions block.
      */
     public static List<LayoutBlock> example04() {
         List<LayoutBlock> blocks = List.of(
