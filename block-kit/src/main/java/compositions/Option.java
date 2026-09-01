@@ -24,7 +24,7 @@ public class Option {
     }
 
     /**
-     * Options hosted in a static select menu across several blocks.
+     * A static select menu element with several option objects.
      */
     public static List<LayoutBlock> example02() {
         List<LayoutBlock> blocks = List.of(
