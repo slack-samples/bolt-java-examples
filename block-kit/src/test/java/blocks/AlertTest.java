@@ -17,7 +17,8 @@ public class AlertTest {
               "type": "alert",
               "text": {
                 "type": "mrkdwn",
-                "text": "The work is mysterious and important."
+                "text": "The work is mysterious and important.",
+                "verbatim": false
               },
               "level": "info"
             }
