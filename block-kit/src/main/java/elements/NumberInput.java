@@ -1,9 +1,8 @@
 package elements;
 
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.InputBlock;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.element.BlockElements;
 
 /**
@@ -17,7 +16,7 @@ public class NumberInput {
     public static InputBlock example01() {
         InputBlock block = Blocks.input(i -> i.element(
                         BlockElements.numberInput(n -> n.decimalAllowed(false).actionId("number_input-action")))
-                .label(plainText(pt -> pt.text("Label").emoji(true))));
+                .label(BlockCompositions.plainText(pt -> pt.text("Label").emoji(true))));
         return block;
     }
 }

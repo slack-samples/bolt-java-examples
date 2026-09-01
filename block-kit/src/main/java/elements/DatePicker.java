@@ -1,10 +1,8 @@
 package elements;
 
-import static com.slack.api.model.block.composition.BlockCompositions.markdownText;
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.SectionBlock;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.element.BlockElements;
 
 /**
@@ -17,10 +15,10 @@ public class DatePicker {
      */
     public static SectionBlock example01() {
         SectionBlock block = Blocks.section(s -> s.blockId("section1234")
-                .text(markdownText("Pick a date for the deadline."))
+                .text(BlockCompositions.markdownText("Pick a date for the deadline."))
                 .accessory(BlockElements.datePicker(d -> d.actionId("datepicker123")
                         .initialDate("1990-04-28")
-                        .placeholder(plainText("Select a date")))));
+                        .placeholder(BlockCompositions.plainText("Select a date")))));
         return block;
     }
 }
