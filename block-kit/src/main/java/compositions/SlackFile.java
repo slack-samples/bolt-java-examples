@@ -11,7 +11,7 @@ import com.slack.api.model.block.composition.SlackFileObject;
  */
 public class SlackFile {
     /**
-     * An image block containing a Slack file object referenced by url.
+     * An image block using slack_file with a url.
      */
     public static ImageBlock example01() {
         ImageBlock block = Blocks.image(i -> i.title(BlockCompositions.plainText("Please enjoy this photo of a kitten"))
@@ -24,7 +24,7 @@ public class SlackFile {
     }
 
     /**
-     * An image block containing a Slack file object referenced by id.
+     * An image block using slack_file with an id.
      */
     public static ImageBlock example02() {
         ImageBlock block = Blocks.image(i -> i.title(BlockCompositions.plainText("Please enjoy this photo of a kitten"))
