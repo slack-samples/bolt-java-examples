@@ -1,9 +1,8 @@
 package compositions;
 
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.InputBlock;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.composition.DispatchActionConfig;
 import com.slack.api.model.block.element.BlockElements;
 import java.util.List;
@@ -22,7 +21,7 @@ public class DispatchActionConfiguration {
                         .dispatchActionConfig(DispatchActionConfig.builder()
                                 .triggerActionsOn(List.of("on_character_entered"))
                                 .build())))
-                .label(plainText(
+                .label(BlockCompositions.plainText(
                         l -> l.text("This is a multiline plain-text input").emoji(true))));
         return block;
     }

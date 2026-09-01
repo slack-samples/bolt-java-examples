@@ -1,8 +1,7 @@
 package compositions;
 
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.element.BlockElements;
 import com.slack.api.model.block.element.ConversationsFilter;
 import com.slack.api.model.view.View;
@@ -37,14 +36,15 @@ public class ConversationFilter {
                         .text("Cancel")
                         .emoji(true)
                         .build())
-                .blocks(List.of(
-                        Blocks.input(i -> i.element(BlockElements.conversationsSelect(c -> c.placeholder(plainText(pt ->
+                .blocks(List.of(Blocks.input(i -> i.element(
+                                BlockElements.conversationsSelect(c -> c.placeholder(BlockCompositions.plainText(pt ->
                                                 pt.text("Select a conversation").emoji(true)))
                                         .filter(ConversationsFilter.builder()
                                                 .include(List.of("public", "mpim"))
                                                 .excludeBotUsers(true)
                                                 .build())))
-                                .label(plainText(l -> l.text("Choose the conversation to publish your result to:")
+                        .label(BlockCompositions.plainText(
+                                l -> l.text("Choose the conversation to publish your result to:")
                                         .emoji(true))))))
                 .build();
         return view;

@@ -1,9 +1,8 @@
 package compositions;
 
-import static com.slack.api.model.block.composition.BlockCompositions.markdownText;
-
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.SectionBlock;
+import com.slack.api.model.block.composition.BlockCompositions;
 
 /**
  * Defines an object containing some text.
@@ -14,8 +13,8 @@ public class Text {
      * A section block hosting an mrkdwn text object.
      */
     public static SectionBlock example01() {
-        SectionBlock block = Blocks.section(
-                s -> s.text(markdownText("A message *with some bold text* and _some italicized text_.")));
+        SectionBlock block = Blocks.section(s ->
+                s.text(BlockCompositions.markdownText("A message *with some bold text* and _some italicized text_.")));
         return block;
     }
 }
