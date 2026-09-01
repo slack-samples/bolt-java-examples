@@ -522,27 +522,4 @@ public class RichTextTest {
             """;
         assertEquals(JsonParser.parseString(expected), JsonParser.parseString(actual));
     }
-
-    @Test
-    public void testExample14() {
-        RichTextBlock block = RichText.example14();
-        String actual = GsonFactory.createSnakeCase().toJson(block);
-        String expected = """
-            {
-              "type": "rich_text",
-              "elements": [
-                {
-                  "type": "rich_text_section",
-                  "elements": [
-                    {
-                      "type": "team",
-                      "team_id": "T123ABC456"
-                    }
-                  ]
-                }
-              ]
-            }
-            """;
-        assertEquals(JsonParser.parseString(expected), JsonParser.parseString(actual));
-    }
 }

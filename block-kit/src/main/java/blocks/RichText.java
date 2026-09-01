@@ -281,16 +281,4 @@ public class RichText {
                 .build())));
         return block;
     }
-
-    /**
-     * A rich text block with a team mention element.
-     */
-    public static RichTextBlock example14() {
-        RichTextBlock block = Blocks.richText(rt -> rt.elements(List.of(RichTextSectionElement.builder()
-                .elements(List.of(RichTextSectionElement.Team.builder()
-                        .teamId("T123ABC456")
-                        .build()))
-                .build())));
-        return block;
-    }
 }
