@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class OptionGroup {
     /**
-     * Option groups hosted in a static select menu across several blocks.
+     * A static select menu containing the option group object.
      */
     public static List<LayoutBlock> example01() {
         List<LayoutBlock> blocks = List.of(
