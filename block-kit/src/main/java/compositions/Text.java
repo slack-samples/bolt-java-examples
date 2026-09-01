@@ -10,7 +10,7 @@ import com.slack.api.model.block.composition.BlockCompositions;
  */
 public class Text {
     /**
-     * A section block hosting an mrkdwn text object.
+     * A section block containing a text object.
      */
     public static SectionBlock example01() {
         SectionBlock block = Blocks.section(s ->
