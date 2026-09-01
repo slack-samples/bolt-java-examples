@@ -13,9 +13,9 @@ public class Alert {
      * An informational alert block.
      */
     public static AlertBlock example01() {
-        AlertBlock block =
-                Blocks.alert(a -> a.text(BlockCompositions.markdownText("The work is mysterious and important."))
-                        .level("info"));
+        AlertBlock block = Blocks.alert(a -> a.text(BlockCompositions.markdownText(
+                        mt -> mt.text("The work is mysterious and important.").verbatim(false)))
+                .level("info"));
         return block;
     }
 }
