@@ -3,9 +3,10 @@ package elements;
 import static com.slack.api.model.block.composition.BlockCompositions.plainText;
 
 import com.slack.api.model.block.Blocks;
-import com.slack.api.model.block.InputBlock;
 import com.slack.api.model.block.composition.DispatchActionConfig;
 import com.slack.api.model.block.element.BlockElements;
+import com.slack.api.model.view.View;
+import com.slack.api.model.view.Views;
 import java.util.List;
 
 /**
@@ -15,17 +16,17 @@ import java.util.List;
  */
 public class RichTextInput {
     /**
-     * An input block with a rich text input element.
+     * A home view with an input block containing a rich text input element.
      */
-    public static InputBlock example01() {
-        InputBlock block =
-                Blocks.input(i -> i.element(BlockElements.richTextInput(rt -> rt.actionId("rich_text_input-action")
+    public static View example01() {
+        View view = Views.view(v -> v.type("home").blocks(List.of(Blocks.input(i -> i.element(
+                        BlockElements.richTextInput(rt -> rt.actionId("rich_text_input-action")
                                 .dispatchActionConfig(DispatchActionConfig.builder()
                                         .triggerActionsOn(List.of("on_character_entered"))
                                         .build())
                                 .focusOnLoad(true)
                                 .placeholder(plainText("Enter text"))))
-                        .label(plainText(l -> l.text("Label").emoji(true))));
-        return block;
+                .label(plainText(l -> l.text("Label").emoji(true)))))));
+        return view;
     }
 }
