@@ -65,8 +65,8 @@ public class ButtonTest {
     }
 
     @Test
-    public void testExample04() {
-        List<LayoutBlock> blocks = Button.example04();
+    public void testExample05() {
+        List<LayoutBlock> blocks = Button.example05();
         String actual = GsonFactory.createSnakeCase().toJson(blocks);
         String expected = """
             [

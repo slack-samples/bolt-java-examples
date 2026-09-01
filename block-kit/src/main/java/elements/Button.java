@@ -44,7 +44,7 @@ public class Button {
     /**
      * The button element used inside either the section or actions block.
      */
-    public static List<LayoutBlock> example04() {
+    public static List<LayoutBlock> example05() {
         List<LayoutBlock> blocks = List.of(
                 Blocks.section(s -> s.text(markdownText("This is a section block with a button."))
                         .accessory(BlockElements.button(b -> b.text(plainText("Click Me"))
