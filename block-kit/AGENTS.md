@@ -1,18 +1,26 @@
 # Adding an Example
 
-A block example is **code-complete** when all four of these are present:
+A block kit example is **code-complete** when all four of these are present:
 
 1. Example file
 2. Test file
 3. README entry
 4. Correct docstring
 
+The steps below apply to blocks, elements, and composition objects. Paths and packages differ by category:
+
+| Category | Package | Source path | Test path | Docs path | README section |
+|---|---|---|---|---|---|
+| Block | `blocks` | `src/main/java/blocks/` | `src/test/java/blocks/` | `blocks/{type}-block` | `### Blocks` |
+| Element | `elements` | `src/main/java/elements/` | `src/test/java/elements/` | `block-elements/{type}-element` | `### Block elements` |
+| Composition | `compositions` | `src/main/java/compositions/` | `src/test/java/compositions/` | `composition-objects/{type}-object` | `### Composition objects` |
+
 ## Example file
 
-Create `src/main/java/blocks/{Type}.java`:
+Create `src/main/java/{package}/{Type}.java`:
 
 ```java
-package blocks;
+package {package};
 
 import com.slack.api.model.block.{Type}Block;
 import com.slack.api.model.block.Blocks;
@@ -20,7 +28,7 @@ import com.slack.api.model.block.composition.BlockCompositions;
 
 /**
  * {description from docs page — must match exactly}.
- * {@link https://docs.slack.dev/reference/block-kit/blocks/{type}-block/}
+ * {@link https://docs.slack.dev/reference/block-kit/{docs-path}/}
  */
 public class {Type} {
     /**
@@ -34,8 +42,8 @@ public class {Type} {
 ```
 
 Rules:
-- Package is always `blocks`
-- Each example is a `public static` method returning the block type
+- Package matches the category (`blocks`, `elements`, or `compositions`)
+- Each example is a `public static` method returning the appropriate type
 - Methods named `example01()`, `example02()`, etc.
 - Use the `Blocks.*` builder DSL (not raw constructors)
 - Use `BlockCompositions.markdownText()` / `BlockCompositions.plainText()` for text objects
@@ -44,10 +52,10 @@ Rules:
 
 ## Test file
 
-Create `src/test/java/blocks/{Type}Test.java`:
+Create `src/test/java/{package}/{Type}Test.java`:
 
 ```java
-package blocks;
+package {package};
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -76,10 +84,10 @@ The expected JSON must match the docs page example exactly (minus the outer `"bl
 
 ## README entry
 
-Add an entry to `block-kit/README.md` in alphabetical order under `### Blocks`:
+Add an entry to `block-kit/README.md` in alphabetical order under the matching section:
 
 ```markdown
-- **[{Name}](https://docs.slack.dev/reference/block-kit/blocks/{type}-block)**: {Description matching docs}. [Implementation](./src/main/java/blocks/{Type}.java).
+- **[{Name}](https://docs.slack.dev/reference/block-kit/{docs-path})**: {Description matching docs}. [Implementation](./src/main/java/{package}/{Type}.java).
 ```
 
 The description must match the docs page `description` field exactly.
