@@ -9,10 +9,10 @@ A block kit example is **code-complete** when all four of these are present:
 
 The steps below apply to blocks, elements, and composition objects. Paths and packages differ by category:
 
-| Category | Package | Source path | Test path | Docs path | README section |
-|---|---|---|---|---|---|
-| Block | `blocks` | `src/main/java/blocks/` | `src/test/java/blocks/` | `blocks/{type}-block` | `### Blocks` |
-| Element | `elements` | `src/main/java/elements/` | `src/test/java/elements/` | `block-elements/{type}-element` | `### Block elements` |
+|  Category   |    Package     |          Source path          |           Test path           |              Docs path              |      README section       |
+|-------------|----------------|-------------------------------|-------------------------------|-------------------------------------|---------------------------|
+| Block       | `blocks`       | `src/main/java/blocks/`       | `src/test/java/blocks/`       | `blocks/{type}-block`               | `### Blocks`              |
+| Element     | `elements`     | `src/main/java/elements/`     | `src/test/java/elements/`     | `block-elements/{type}-element`     | `### Block elements`      |
 | Composition | `compositions` | `src/main/java/compositions/` | `src/test/java/compositions/` | `composition-objects/{type}-object` | `### Composition objects` |
 
 ## Example file
