@@ -22,5 +22,8 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 ### chat
 
+- **[chat.appendStream](https://docs.slack.dev/reference/methods/chat.appendStream)**: Appends text to an existing streaming conversation. [Implementation](./src/main/java/chat/ChatAppendStream.java).
 - **[chat.postMessage](https://docs.slack.dev/reference/methods/chat.postmessage)**: Sends a message to a channel. [Implementation](./src/main/java/chat/ChatPostMessage.java).
+- **[chat.startStream](https://docs.slack.dev/reference/methods/chat.startStream)**: Starts a new streaming conversation. [Implementation](./src/main/java/chat/ChatStartStream.java).
+- **[chat.stopStream](https://docs.slack.dev/reference/methods/chat.stopStream)**: Stops a streaming conversation. [Implementation](./src/main/java/chat/ChatStopStream.java).
 
