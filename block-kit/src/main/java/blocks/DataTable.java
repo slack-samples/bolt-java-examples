@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class DataTable {
     /**
-     * A data table of departments with rich text badge cells.
+     * A sample data table block.
      */
     public static DataTableBlock example01() {
         DataTableBlock block = Blocks.dataTable(t -> t.caption("A Fabulous Table")
