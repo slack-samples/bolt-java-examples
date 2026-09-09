@@ -15,27 +15,126 @@ public class DataTableTest {
         String expected = """
             {
               "type": "data_table",
-              "caption": "A list of fruit and their quantities",
+              "caption": "A Fabulous Table",
               "rows": [
                 [
                   {
                     "type": "raw_text",
-                    "text": "Fruit"
+                    "text": "Name"
                   },
                   {
                     "type": "raw_text",
-                    "text": "Quantity"
+                    "text": "Department"
+                  },
+                  {
+                    "type": "raw_text",
+                    "text": "Badge"
                   }
                 ],
                 [
                   {
                     "type": "raw_text",
-                    "text": "Apples"
+                    "text": "Data Refinement Department"
                   },
                   {
-                    "type": "raw_number",
-                    "value": 12.0,
-                    "text": "12"
+                    "type": "raw_text",
+                    "text": "MDR"
+                  },
+                  {
+                    "type": "rich_text",
+                    "elements": [
+                      {
+                        "type": "rich_text_section",
+                        "elements": [
+                          {
+                            "type": "text",
+                            "text": "Blue",
+                            "style": {
+                              "bold": true,
+                              "italic": false,
+                              "strike": false,
+                              "highlight": false,
+                              "client_highlight": false,
+                              "underline": false,
+                              "unlink": false,
+                              "code": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "type": "raw_text",
+                    "text": "Art Sourcing Department"
+                  },
+                  {
+                    "type": "raw_text",
+                    "text": "O&D"
+                  },
+                  {
+                    "type": "rich_text",
+                    "elements": [
+                      {
+                        "type": "rich_text_section",
+                        "elements": [
+                          {
+                            "type": "text",
+                            "text": "Green"
+                          },
+                          {
+                            "type": "text",
+                            "text": "review",
+                            "style": {
+                              "bold": false,
+                              "italic": true,
+                              "strike": false,
+                              "highlight": false,
+                              "client_highlight": false,
+                              "underline": false,
+                              "unlink": false,
+                              "code": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "type": "raw_text",
+                    "text": "Wellness Department"
+                  },
+                  {
+                    "type": "raw_text",
+                    "text": "Wellness Center"
+                  },
+                  {
+                    "type": "rich_text",
+                    "elements": [
+                      {
+                        "type": "rich_text_section",
+                        "elements": [
+                          {
+                            "type": "text",
+                            "text": "Limited",
+                            "style": {
+                              "bold": true,
+                              "italic": false,
+                              "strike": false,
+                              "highlight": false,
+                              "client_highlight": false,
+                              "underline": false,
+                              "unlink": false,
+                              "code": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               ]
