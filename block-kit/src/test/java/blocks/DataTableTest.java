@@ -15,23 +15,129 @@ public class DataTableTest {
         String expected = """
             {
               "type": "data_table",
+              "caption": "A Fabulous Table",
               "rows": [
                 [
-                  { "type": "raw_text", "text": "Item" },
-                  { "type": "raw_text", "text": "Count" }
+                  {
+                    "type": "raw_text",
+                    "text": "Name"
+                  },
+                  {
+                    "type": "raw_text",
+                    "text": "Department"
+                  },
+                  {
+                    "type": "raw_text",
+                    "text": "Badge"
+                  }
                 ],
                 [
-                  { "type": "raw_text", "text": "Widgets" },
-                  { "type": "raw_number", "value": 42.0, "text": "42" }
+                  {
+                    "type": "raw_text",
+                    "text": "Data Refinement Department"
+                  },
+                  {
+                    "type": "raw_text",
+                    "text": "MDR"
+                  },
+                  {
+                    "type": "rich_text",
+                    "elements": [
+                      {
+                        "type": "rich_text_section",
+                        "elements": [
+                          {
+                            "type": "text",
+                            "text": "Blue",
+                            "style": {
+                              "bold": true,
+                              "italic": false,
+                              "strike": false,
+                              "highlight": false,
+                              "client_highlight": false,
+                              "underline": false,
+                              "unlink": false,
+                              "code": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ],
                 [
-                  { "type": "raw_text", "text": "Gadgets" },
-                  { "type": "raw_number", "value": 7.0, "text": "7" }
+                  {
+                    "type": "raw_text",
+                    "text": "Art Sourcing Department"
+                  },
+                  {
+                    "type": "raw_text",
+                    "text": "O&D"
+                  },
+                  {
+                    "type": "rich_text",
+                    "elements": [
+                      {
+                        "type": "rich_text_section",
+                        "elements": [
+                          {
+                            "type": "text",
+                            "text": "Green"
+                          },
+                          {
+                            "type": "text",
+                            "text": "review",
+                            "style": {
+                              "bold": false,
+                              "italic": true,
+                              "strike": false,
+                              "highlight": false,
+                              "client_highlight": false,
+                              "underline": false,
+                              "unlink": false,
+                              "code": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "type": "raw_text",
+                    "text": "Wellness Department"
+                  },
+                  {
+                    "type": "raw_text",
+                    "text": "Wellness Center"
+                  },
+                  {
+                    "type": "rich_text",
+                    "elements": [
+                      {
+                        "type": "rich_text_section",
+                        "elements": [
+                          {
+                            "type": "text",
+                            "text": "Limited",
+                            "style": {
+                              "bold": true,
+                              "italic": false,
+                              "strike": false,
+                              "highlight": false,
+                              "client_highlight": false,
+                              "underline": false,
+                              "unlink": false,
+                              "code": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ]
-              ],
-              "caption": "Quarterly widget report",
-              "page_size": 10,
-              "row_header_column_index": 0
+              ]
             }
             """;
         assertEquals(JsonParser.parseString(expected), JsonParser.parseString(actual));
