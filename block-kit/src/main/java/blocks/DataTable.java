@@ -2,7 +2,7 @@ package blocks;
 
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.DataTableBlock;
-import com.slack.api.model.block.composition.RawTextObject;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.element.RichTextSectionElement;
 import com.slack.api.model.block.element.RichTextSectionElement.TextStyle;
 import java.util.List;
@@ -19,14 +19,12 @@ public class DataTable {
         DataTableBlock block = Blocks.dataTable(t -> t.caption("A Fabulous Table")
                 .rows(List.of(
                         List.of(
-                                RawTextObject.builder().text("Name").build(),
-                                RawTextObject.builder().text("Department").build(),
-                                RawTextObject.builder().text("Badge").build()),
+                                BlockCompositions.rawText("Name"),
+                                BlockCompositions.rawText("Department"),
+                                BlockCompositions.rawText("Badge")),
                         List.of(
-                                RawTextObject.builder()
-                                        .text("Data Refinement Department")
-                                        .build(),
-                                RawTextObject.builder().text("MDR").build(),
+                                BlockCompositions.rawText("Data Refinement Department"),
+                                BlockCompositions.rawText("MDR"),
                                 Blocks.richText(rt -> rt.elements(List.of(RichTextSectionElement.builder()
                                         .elements(List.of(RichTextSectionElement.Text.builder()
                                                 .text("Blue")
@@ -36,10 +34,8 @@ public class DataTable {
                                                 .build()))
                                         .build())))),
                         List.of(
-                                RawTextObject.builder()
-                                        .text("Art Sourcing Department")
-                                        .build(),
-                                RawTextObject.builder().text("O&D").build(),
+                                BlockCompositions.rawText("Art Sourcing Department"),
+                                BlockCompositions.rawText("O&D"),
                                 Blocks.richText(rt -> rt.elements(List.of(RichTextSectionElement.builder()
                                         .elements(List.of(
                                                 RichTextSectionElement.Text.builder()
@@ -54,10 +50,8 @@ public class DataTable {
                                                         .build()))
                                         .build())))),
                         List.of(
-                                RawTextObject.builder()
-                                        .text("Wellness Department")
-                                        .build(),
-                                RawTextObject.builder().text("Wellness Center").build(),
+                                BlockCompositions.rawText("Wellness Department"),
+                                BlockCompositions.rawText("Wellness Center"),
                                 Blocks.richText(rt -> rt.elements(List.of(RichTextSectionElement.builder()
                                         .elements(List.of(RichTextSectionElement.Text.builder()
                                                 .text("Limited")
