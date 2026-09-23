@@ -18,8 +18,9 @@ public class AgentsSessionsRename {
 
         // Call the agents.sessions.rename method
         AgentsSessionsRenameRequest request = AgentsSessionsRenameRequest.builder()
-                .channelId("C123ABC456")
-                .title("Fix flaky login test")
+                .channelId("C123ABC")
+                .threadTs("1717171717.123456")
+                .title("Bora Bora trip prep")
                 .build();
         AgentsSessionsRenameResponse response = methods.agentsSessionsRename(request);
 

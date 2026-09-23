@@ -18,8 +18,10 @@ public class AgentsSessionsSetStatus {
 
         // Call the agents.sessions.setStatus method
         AgentsSessionsSetStatusRequest request = AgentsSessionsSetStatusRequest.builder()
-                .channelId("C123ABC456")
+                .channelId("C123ABC")
+                .threadTs("1717171717.123456")
                 .status("processing")
+                .title("Scuba diving research")
                 .build();
         AgentsSessionsSetStatusResponse response = methods.agentsSessionsSetStatus(request);
 
