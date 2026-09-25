@@ -18,8 +18,9 @@ public class AgentsConversationsCreate {
 
         // Call the agents.conversations.create method
         AgentsConversationsCreateRequest request = AgentsConversationsCreateRequest.builder()
-                .name("Fix flaky login test")
-                .originChannelId("C123ABC456")
+                .name("Migrate billing cron to Temporal")
+                .sessionId("ses_8675309")
+                .originChannelId("C0123456789")
                 .originMessageTs("1717171717.123456")
                 .build();
         AgentsConversationsCreateResponse response = methods.agentsConversationsCreate(request);

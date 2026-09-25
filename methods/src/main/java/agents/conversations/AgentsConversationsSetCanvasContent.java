@@ -18,9 +18,9 @@ public class AgentsConversationsSetCanvasContent {
 
         // Call the agents.conversations.setCanvasContent method
         AgentsConversationsSetCanvasContentRequest request = AgentsConversationsSetCanvasContentRequest.builder()
-                .channel("C123ABC456")
-                .canvasId("F123ABC456")
-                .content("# Plan\n\n1. Reproduce the flaky test\n2. Fix the race\n3. Verify")
+                .channel("C9876543210")
+                .canvasId("F1234567890")
+                .content("# Migration plan\n\n1. Inventory cron jobs\n2. Port billing jobs last\n")
                 .build();
         AgentsConversationsSetCanvasContentResponse response = methods.agentsConversationsSetCanvasContent(request);
 

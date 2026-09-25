@@ -18,8 +18,9 @@ public class AgentsConversationsGetCanvas {
 
         // Call the agents.conversations.getCanvas method
         AgentsConversationsGetCanvasRequest request = AgentsConversationsGetCanvasRequest.builder()
-                .channel("C123ABC456")
-                .canvasId("F123ABC456")
+                .channel("C9876543210")
+                .canvasId("F1234567890")
+                .includeResolved(false)
                 .build();
         AgentsConversationsGetCanvasResponse response = methods.agentsConversationsGetCanvas(request);
 

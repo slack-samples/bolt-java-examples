@@ -17,12 +17,14 @@ public class AgentsConversationsSetView {
         MethodsClient methods = Slack.getInstance().methods(token);
 
         // Call the agents.conversations.setView method
+        // The csp object is passed as a JSON-encoded string until its shape stabilizes
+        String csp = "{\"resource_domains\":[\"https://cdn.jsdelivr.net\"]}";
         AgentsConversationsSetViewRequest request = AgentsConversationsSetViewRequest.builder()
-                .channelId("C123ABC456")
-                .type("diff")
-                .content("diff --git a/cron.py b/cron.py\n--- a/cron.py\n+++ b/cron.py\n@@ ...")
-                .baseBranch("main")
-                .headBranch("agent/migrate-cron")
+                .channelId("C9876543210")
+                .viewKey("reports/coverage.html")
+                .name("Coverage")
+                .content("<!doctype html><html><head>…</head><body>…</body></html>")
+                .cspAsString(csp)
                 .build();
         AgentsConversationsSetViewResponse response = methods.agentsConversationsSetView(request);
 

@@ -18,8 +18,8 @@ public class AgentsConversationsRemoveView {
 
         // Call the agents.conversations.removeView method
         AgentsConversationsRemoveViewRequest request = AgentsConversationsRemoveViewRequest.builder()
-                .channelId("C123ABC456")
-                .viewId("V123ABC456")
+                .channelId("C9876543210")
+                .viewKey("reports/coverage.html")
                 .build();
         AgentsConversationsRemoveViewResponse response = methods.agentsConversationsRemoveView(request);
 

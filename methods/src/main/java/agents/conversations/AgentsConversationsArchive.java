@@ -18,8 +18,8 @@ public class AgentsConversationsArchive {
 
         // Call the agents.conversations.archive method
         AgentsConversationsArchiveRequest request = AgentsConversationsArchiveRequest.builder()
-                .channelId("C123ABC456")
-                .summaryMessageTs("1717171717.123456")
+                .channelId("C9876543210")
+                .summaryMessageTs("1717182000.456789")
                 .build();
         AgentsConversationsArchiveResponse response = methods.agentsConversationsArchive(request);
 

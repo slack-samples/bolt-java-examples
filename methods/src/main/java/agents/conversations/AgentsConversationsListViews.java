@@ -18,7 +18,7 @@ public class AgentsConversationsListViews {
 
         // Call the agents.conversations.listViews method
         AgentsConversationsListViewsRequest request = AgentsConversationsListViewsRequest.builder()
-                .channelId("C123ABC456")
+                .channelId("C9876543210")
                 .build();
         AgentsConversationsListViewsResponse response = methods.agentsConversationsListViews(request);
 

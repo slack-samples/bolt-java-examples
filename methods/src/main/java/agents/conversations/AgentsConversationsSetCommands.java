@@ -19,11 +19,12 @@ public class AgentsConversationsSetCommands {
         // Call the agents.conversations.setCommands method
         // The commands array is passed as a JSON-encoded string until the command item shape stabilizes
         String commands = "["
-                + "{\"name\":\"test\",\"description\":\"Run the test suite\"},"
-                + "{\"name\":\"diff\",\"description\":\"Show the current diff\"}"
+                + "{\"name\":\"create-pr\",\"description\":\"Open a pull request for the current branch\",\"argument_hint\":\"[title]\"},"
+                + "{\"name\":\"run-tests\",\"description\":\"Run the test suite and report back\"},"
+                + "{\"name\":\"summarize\",\"description\":\"Post a summary of the work so far\"}"
                 + "]";
         AgentsConversationsSetCommandsRequest request = AgentsConversationsSetCommandsRequest.builder()
-                .channelId("C123ABC456")
+                .channelId("C9876543210")
                 .commandsAsString(commands)
                 .build();
         AgentsConversationsSetCommandsResponse response = methods.agentsConversationsSetCommands(request);
