@@ -18,6 +18,15 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 ### agents
 
+- **[agents.conversations.archive](https://docs.slack.dev/reference/methods/agents.conversations.archive)**: Archive a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsArchive.java).
+- **[agents.conversations.create](https://docs.slack.dev/reference/methods/agents.conversations.create)**: Create a dedicated code channel for an agent session. [Implementation](./src/main/java/agents/conversations/AgentsConversationsCreate.java).
+- **[agents.conversations.getCanvas](https://docs.slack.dev/reference/methods/agents.conversations.getCanvas)**: Fetch a canvas attached to a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsGetCanvas.java).
+- **[agents.conversations.listViews](https://docs.slack.dev/reference/methods/agents.conversations.listViews)**: List the views currently attached to a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsListViews.java).
+- **[agents.conversations.removeView](https://docs.slack.dev/reference/methods/agents.conversations.removeView)**: Remove a view from a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsRemoveView.java).
+- **[agents.conversations.setCanvasContent](https://docs.slack.dev/reference/methods/agents.conversations.setCanvasContent)**: Replace the full markdown content of a plan canvas attached to a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsSetCanvasContent.java).
+- **[agents.conversations.setCommands](https://docs.slack.dev/reference/methods/agents.conversations.setCommands)**: Register the set of agent-defined slash commands for the calling agent in a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsSetCommands.java).
+- **[agents.conversations.setProperties](https://docs.slack.dev/reference/methods/agents.conversations.setProperties)**: Set properties on a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsSetProperties.java).
+- **[agents.conversations.setView](https://docs.slack.dev/reference/methods/agents.conversations.setView)**: Create or update a view in a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsSetView.java).
 - **[agents.sessions.rename](https://docs.slack.dev/reference/methods/agents.sessions.rename)**: Rename an agent session. [Implementation](./src/main/java/agents/sessions/AgentsSessionsRename.java).
 - **[agents.sessions.setStatus](https://docs.slack.dev/reference/methods/agents.sessions.setStatus)**: Set an agent session's lifecycle status, creating the session if needed. [Implementation](./src/main/java/agents/sessions/AgentsSessionsSetStatus.java).
 
