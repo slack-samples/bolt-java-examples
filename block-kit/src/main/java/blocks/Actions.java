@@ -1,7 +1,5 @@
 package blocks;
 
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.ActionsBlock;
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.composition.BlockCompositions;
@@ -24,19 +22,19 @@ public class Actions {
                                 .placeholder(BlockCompositions.plainText("Which witch is the witchiest witch?"))
                                 .options(List.of(
                                         OptionObject.builder()
-                                                .text(plainText("Matilda"))
+                                                .text(BlockCompositions.plainText("Matilda"))
                                                 .value("matilda")
                                                 .build(),
                                         OptionObject.builder()
-                                                .text(plainText("Glinda"))
+                                                .text(BlockCompositions.plainText("Glinda"))
                                                 .value("glinda")
                                                 .build(),
                                         OptionObject.builder()
-                                                .text(plainText("Granny Weatherwax"))
+                                                .text(BlockCompositions.plainText("Granny Weatherwax"))
                                                 .value("grannyWeatherwax")
                                                 .build(),
                                         OptionObject.builder()
-                                                .text(plainText("Hermione"))
+                                                .text(BlockCompositions.plainText("Hermione"))
                                                 .value("hermione")
                                                 .build()))),
                         BlockElements.button(b -> b.text(BlockCompositions.plainText("Cancel"))
@@ -57,23 +55,23 @@ public class Actions {
                         BlockElements.overflowMenu(o -> o.actionId("overflow")
                                 .options(List.of(
                                         OptionObject.builder()
-                                                .text(plainText("*this is plain_text text*"))
+                                                .text(BlockCompositions.plainText("*this is plain_text text*"))
                                                 .value("value-0")
                                                 .build(),
                                         OptionObject.builder()
-                                                .text(plainText("*this is plain_text text*"))
+                                                .text(BlockCompositions.plainText("*this is plain_text text*"))
                                                 .value("value-1")
                                                 .build(),
                                         OptionObject.builder()
-                                                .text(plainText("*this is plain_text text*"))
+                                                .text(BlockCompositions.plainText("*this is plain_text text*"))
                                                 .value("value-2")
                                                 .build(),
                                         OptionObject.builder()
-                                                .text(plainText("*this is plain_text text*"))
+                                                .text(BlockCompositions.plainText("*this is plain_text text*"))
                                                 .value("value-3")
                                                 .build(),
                                         OptionObject.builder()
-                                                .text(plainText("*this is plain_text text*"))
+                                                .text(BlockCompositions.plainText("*this is plain_text text*"))
                                                 .value("value-4")
                                                 .build()))),
                         BlockElements.button(b -> b.text(BlockCompositions.plainText("Click Me"))
