@@ -28,17 +28,20 @@ public class Container {
                                 .text(BlockCompositions.markdownText(
                                         "*DCW-1025*\nStatus: In Progress → Closed\nAssignee: @mordecai → @carl"))),
                         Blocks.divider(d -> d.blockId("bulk-div-2")),
-                        Blocks.context(ctx -> ctx.blockId("bulk-status-bar")
-                                .elements(List.of(BlockCompositions.markdownText(
-                                        ":white_check_mark: 2 records will be updated • Status → Closed • Assignee → @carl")))),
+                        Blocks.context(
+                                ctx -> ctx.blockId("bulk-status-bar")
+                                        .elements(
+                                                List.of(
+                                                        BlockCompositions.markdownText(
+                                                                ":white_check_mark: 2 records will be updated • Status → Closed • Assignee → @carl")))),
                         Blocks.actions(a -> a.blockId("bulk-actions")
                                 .elements(List.of(
-                                        BlockElements.button(b -> b.text(
-                                                        BlockCompositions.plainText(pt -> pt.text("Confirm All").emoji(true)))
+                                        BlockElements.button(b -> b.text(BlockCompositions.plainText(pt ->
+                                                        pt.text("Confirm All").emoji(true)))
                                                 .style("primary")
                                                 .actionId("bulk_confirm")),
-                                        BlockElements.button(b -> b.text(
-                                                        BlockCompositions.plainText(pt -> pt.text("Cancel").emoji(true)))
+                                        BlockElements.button(b -> b.text(BlockCompositions.plainText(
+                                                        pt -> pt.text("Cancel").emoji(true)))
                                                 .actionId("bulk_cancel"))))))));
         return block;
     }
