@@ -22,7 +22,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.6.3</version>
+        <version>3.6.4</version>
         <configuration>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
         </configuration>
@@ -71,7 +71,7 @@
     <dependency>
       <groupId>com.slack.api</groupId>
       <artifactId>slack-api-client</artifactId>
-      <version>1.51.0</version>
+      <version>1.52.0</version>
     </dependency>
   </dependencies>
 </project>
