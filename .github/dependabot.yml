@@ -30,3 +30,15 @@ updates:
       slack:
         patterns:
           - "com.slack.api:*"
+  - package-ecosystem: "maven"
+    directory: "standardized-auth"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "com.slack.api:*"
+    groups:
+      slack:
+        patterns:
+          - "com.slack.api:*"
