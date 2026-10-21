@@ -2,6 +2,5 @@
 .project
 .settings
 target
-data/
 .env*
-!.env.example
+acme.properties
