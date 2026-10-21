@@ -14,8 +14,9 @@ public final class TempConnections {
     }
 
     public void close() throws IOException {
-        Files.deleteIfExists(Connections.filename);
-        Files.delete(dir);
+        Path file = Connections.filename;
         Connections.filename = original;
+        Files.deleteIfExists(file);
+        Files.delete(dir);
     }
 }
