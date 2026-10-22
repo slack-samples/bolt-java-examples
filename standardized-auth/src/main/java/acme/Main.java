@@ -15,6 +15,7 @@ import com.slack.api.bolt.socket_mode.SocketModeApp;
 import com.slack.api.methods.SlackApiException;
 import com.slack.api.methods.request.apps.user.connection.AppsUserConnectionRequestAuthRequest.PrimaryProvider;
 import com.slack.api.model.event.AppHomeOpenedEvent;
+import com.slack.api.model.event.UserConnectionEvent;
 import com.slack.api.model.event.UserConnectionStatusRequestedEvent;
 import java.io.IOException;
 

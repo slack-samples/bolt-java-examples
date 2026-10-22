@@ -17,6 +17,7 @@ import com.slack.api.bolt.context.builtin.EventContext;
 import com.slack.api.bolt.request.RequestHeaders;
 import com.slack.api.bolt.request.builtin.BlockActionRequest;
 import com.slack.api.bolt.response.Response;
+import com.slack.api.bolt.util.EventsApiPayloadParser;
 import com.slack.api.methods.MethodsClient;
 import com.slack.api.methods.request.apps.user.connection.AppsUserConnectionRequestAuthRequest;
 import com.slack.api.methods.request.apps.user.connection.AppsUserConnectionRequestAuthRequest.PrimaryProvider;
@@ -26,6 +27,7 @@ import com.slack.api.model.block.AuthProviderBlock;
 import com.slack.api.model.block.LayoutBlock;
 import com.slack.api.model.event.AppHomeOpenedEvent;
 import com.slack.api.model.event.Event;
+import com.slack.api.model.event.UserConnectionEvent;
 import com.slack.api.model.event.UserConnectionStatusRequestedEvent;
 import com.slack.api.util.json.GsonFactory;
 import java.util.List;
@@ -150,6 +152,11 @@ public class MainTest {
         Main.userConnectionCallback(payload(event), eventContext);
 
         verifyNoInteractions(client);
+    }
+
+    @Test
+    public void testUserConnectionRoutesBothSubtypesToOneListener() {
+        assertEquals("user_connection", EventsApiPayloadParser.getEventTypeAndSubtype(UserConnectionEvent.class));
     }
 
     @Test
