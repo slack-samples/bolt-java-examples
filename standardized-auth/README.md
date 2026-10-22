@@ -20,6 +20,8 @@ Connecting in one click stands in for your service's real login. Slack requires 
 
 Everything arrives over Socket Mode, so the app needs no public URL. The manifest subscribes to the `user_connection` and `user_connection_status_requested` events, which every app with `features.user_connections` needs. Use a Slack CLI newer than v4.10.0: older versions don't send `features.user_connections` with the manifest.
 
+Acme runs on Java 17 with Maven. `slack run` starts it with `mvn compile exec:java`, the `start` hook in [`.slack/hooks.json`](./.slack/hooks.json), and every Slack API call and its response is logged at debug ([`simplelogger.properties`](./src/main/resources/simplelogger.properties)).
+
 ```sh
 $ slack run
 ```
