@@ -34,6 +34,11 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 - **[blocks.validate](https://docs.slack.dev/reference/methods/blocks.validate)**: Validates blocks, messages, and views Block Kit JSON payloads. [Implementation](./src/main/java/blocks/BlocksValidate.java).
 
+### canvases
+
+- **[canvases.create](https://docs.slack.dev/reference/methods/canvases.create)**: Create canvas for a user. [Implementation](./src/main/java/canvases/CanvasesCreate.java).
+- **[canvases.getContent](https://docs.slack.dev/reference/methods/canvases.getContent)**: Get the content of a canvas as markdown (default) or HTML. [Implementation](./src/main/java/canvases/CanvasesGetContent.java).
+
 ### chat
 
 - **[chat.postMessage](https://docs.slack.dev/reference/methods/chat.postmessage)**: Sends a message to a channel. [Implementation](./src/main/java/chat/ChatPostMessage.java).
