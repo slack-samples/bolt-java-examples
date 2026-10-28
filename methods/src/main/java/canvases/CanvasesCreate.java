@@ -24,7 +24,6 @@ public class CanvasesCreate {
                         .type("markdown")
                         .markdown("> standalone canvas!")
                         .build())
-                .channelId("C0123456789")
                 .build();
         CanvasesCreateResponse response = methods.canvasesCreate(request);
 

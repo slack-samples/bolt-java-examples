@@ -18,7 +18,7 @@ public class CanvasesGetContent {
 
         // Call the canvases.getContent method
         CanvasesGetContentRequest request = CanvasesGetContentRequest.builder()
-                .canvasId("F1234567890")
+                .canvasId("F1234ABCD")
                 .contentType("markdown")
                 .build();
         CanvasesGetContentResponse response = methods.canvasesGetContent(request);
