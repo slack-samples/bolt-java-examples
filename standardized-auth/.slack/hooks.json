@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "start": "mvn --quiet compile exec:java"
+  },
+  "config": {
+    "sdk-managed-connection-enabled": true
+  }
+}
