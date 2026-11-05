@@ -13,6 +13,7 @@ Read the [docs](https://docs.slack.dev/block-kit/) to learn concepts behind thes
 - **[Container](https://docs.slack.dev/reference/block-kit/blocks/container-block)**: A general-purpose wrapper for grouping child blocks together, with a configurable size. [Implementation](./src/main/java/blocks/Container.java).
 - **[Carousel](https://docs.slack.dev/reference/block-kit/blocks/carousel-block)**: Displays related card blocks in a horizontally-scrolling container. [Implementation](./src/main/java/blocks/Carousel.java).
 - **[Card](https://docs.slack.dev/reference/block-kit/blocks/card-block)**: Displays content in a card. [Implementation](./src/main/java/blocks/Card.java).
+- **[Context actions](https://docs.slack.dev/reference/block-kit/blocks/context-actions-block)**: Displays actions as contextual info, which can include both feedback buttons and icon buttons. [Implementation](./src/main/java/blocks/ContextActions.java).
 - **[Context](https://docs.slack.dev/reference/block-kit/blocks/context-block)**: Provides contextual info, which can include both images and text. [Implementation](./src/main/java/blocks/Context.java).
 - **[Divider](https://docs.slack.dev/reference/block-kit/blocks/divider-block)**: Visually separates pieces of info inside of a message. [Implementation](./src/main/java/blocks/Divider.java).
 - **[File](https://docs.slack.dev/reference/block-kit/blocks/file-block)**: Displays info about remote files. [Implementation](./src/main/java/blocks/File.java).
