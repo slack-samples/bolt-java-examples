@@ -1,9 +1,8 @@
 package elements;
 
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.ContextActionsBlock;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.element.BlockElements;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class IconButton {
      */
     public static ContextActionsBlock example01() {
         ContextActionsBlock block = Blocks.contextActions(List.of(BlockElements.iconButton(ib -> ib.icon("trash")
-                .text(plainText("Delete"))
+                .text(BlockCompositions.plainText("Delete"))
                 .actionId("delete_button")
                 .value("delete_item"))));
         return block;

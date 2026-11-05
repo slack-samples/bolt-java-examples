@@ -1,8 +1,7 @@
 package elements;
 
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.element.BlockElements;
 import com.slack.api.model.view.View;
 import com.slack.api.model.view.Views;
@@ -23,7 +22,7 @@ public class FileInput {
                         s -> s.type("plain_text").text("Submit").emoji(true)))
                 .close(Views.viewClose(c -> c.type("plain_text").text("Cancel").emoji(true)))
                 .blocks(List.of(Blocks.input(i -> i.blockId("input_block_id")
-                        .label(plainText("Upload Files"))
+                        .label(BlockCompositions.plainText("Upload Files"))
                         .element(BlockElements.fileInput(f -> f.actionId("file_input_action_id_1")
                                 .filetypes(List.of("jpg", "png"))
                                 .maxFiles(5)))))));

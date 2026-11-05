@@ -1,10 +1,8 @@
 package elements;
 
-import static com.slack.api.model.block.composition.BlockCompositions.markdownText;
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.SectionBlock;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.composition.OptionObject;
 import com.slack.api.model.block.element.BlockElements;
 import java.util.List;
@@ -19,27 +17,27 @@ public class OverflowMenu {
      */
     public static SectionBlock example01() {
         SectionBlock block = Blocks.section(s -> s.blockId("section 890")
-                .text(markdownText("This is a section block with an overflow menu."))
+                .text(BlockCompositions.markdownText("This is a section block with an overflow menu."))
                 .accessory(BlockElements.overflowMenu(o -> o.actionId("overflow")
                         .options(List.of(
                                 OptionObject.builder()
-                                        .text(plainText("*this is plain_text text*"))
+                                        .text(BlockCompositions.plainText("*this is plain_text text*"))
                                         .value("value-0")
                                         .build(),
                                 OptionObject.builder()
-                                        .text(plainText("*this is plain_text text*"))
+                                        .text(BlockCompositions.plainText("*this is plain_text text*"))
                                         .value("value-1")
                                         .build(),
                                 OptionObject.builder()
-                                        .text(plainText("*this is plain_text text*"))
+                                        .text(BlockCompositions.plainText("*this is plain_text text*"))
                                         .value("value-2")
                                         .build(),
                                 OptionObject.builder()
-                                        .text(plainText("*this is plain_text text*"))
+                                        .text(BlockCompositions.plainText("*this is plain_text text*"))
                                         .value("value-3")
                                         .build(),
                                 OptionObject.builder()
-                                        .text(plainText("*this is plain_text text*"))
+                                        .text(BlockCompositions.plainText("*this is plain_text text*"))
                                         .value("value-4")
                                         .build())))));
         return block;

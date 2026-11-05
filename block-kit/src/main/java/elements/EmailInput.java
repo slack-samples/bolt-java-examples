@@ -1,9 +1,8 @@
 package elements;
 
-import static com.slack.api.model.block.composition.BlockCompositions.plainText;
-
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.InputBlock;
+import com.slack.api.model.block.composition.BlockCompositions;
 import com.slack.api.model.block.element.BlockElements;
 
 /**
@@ -16,9 +15,9 @@ public class EmailInput {
      */
     public static InputBlock example01() {
         InputBlock block = Blocks.input(i -> i.blockId("input123")
-                .label(plainText("Email Address"))
-                .element(BlockElements.emailTextInput(
-                        e -> e.actionId("email_text_input-action").placeholder(plainText("Enter an email")))));
+                .label(BlockCompositions.plainText("Email Address"))
+                .element(BlockElements.emailTextInput(e -> e.actionId("email_text_input-action")
+                        .placeholder(BlockCompositions.plainText("Enter an email")))));
         return block;
     }
 }
