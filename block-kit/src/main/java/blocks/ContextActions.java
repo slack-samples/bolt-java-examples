@@ -8,7 +8,7 @@ import com.slack.api.model.block.element.BlockElements;
 import java.util.List;
 
 /**
- * Holds interactive elements like feedback buttons and icon buttons.
+ * Displays actions as contextual info, which can include both feedback buttons and icon buttons.
  * {@link https://docs.slack.dev/reference/block-kit/blocks/context-actions-block/}
  */
 public class ContextActions {
