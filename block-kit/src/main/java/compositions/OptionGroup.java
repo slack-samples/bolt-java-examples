@@ -30,21 +30,18 @@ public class OptionGroup {
                                                 .label(BlockCompositions.plainText("Group 1"))
                                                 .options(List.of(
                                                         OptionObject.builder()
-                                                                .text(
-                                                                        BlockCompositions.plainText(
-                                                                                "*this is plain_text text*"))
+                                                                .text(BlockCompositions.plainText(
+                                                                        "*this is plain_text text*"))
                                                                 .value("value-0")
                                                                 .build(),
                                                         OptionObject.builder()
-                                                                .text(
-                                                                        BlockCompositions.plainText(
-                                                                                "*this is plain_text text*"))
+                                                                .text(BlockCompositions.plainText(
+                                                                        "*this is plain_text text*"))
                                                                 .value("value-1")
                                                                 .build(),
                                                         OptionObject.builder()
-                                                                .text(
-                                                                        BlockCompositions.plainText(
-                                                                                "*this is plain_text text*"))
+                                                                .text(BlockCompositions.plainText(
+                                                                        "*this is plain_text text*"))
                                                                 .value("value-2")
                                                                 .build()))
                                                 .build(),

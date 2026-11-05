@@ -36,8 +36,8 @@ public class ConversationFilter {
                         .text("Cancel")
                         .emoji(true)
                         .build())
-                .blocks(List.of(Blocks.input(i -> i.element(
-                                BlockElements.conversationsSelect(c -> c.placeholder(BlockCompositions.plainText(pt ->
+                .blocks(List.of(Blocks.input(i -> i.element(BlockElements.conversationsSelect(
+                                c -> c.placeholder(BlockCompositions.plainText(pt ->
                                                 pt.text("Select a conversation").emoji(true)))
                                         .filter(ConversationsFilter.builder()
                                                 .include(List.of("public", "mpim"))
