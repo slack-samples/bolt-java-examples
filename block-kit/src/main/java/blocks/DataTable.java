@@ -43,10 +43,9 @@ public class DataTable {
                                                         .build(),
                                                 RichTextSectionElement.Text.builder()
                                                         .text("review")
-                                                        .style(
-                                                                TextStyle.builder()
-                                                                        .italic(true)
-                                                                        .build())
+                                                        .style(TextStyle.builder()
+                                                                .italic(true)
+                                                                .build())
                                                         .build()))
                                         .build())))),
                         List.of(
