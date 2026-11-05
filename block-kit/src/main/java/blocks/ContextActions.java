@@ -8,16 +8,16 @@ import com.slack.api.model.block.element.BlockElements;
 import java.util.List;
 
 /**
- * Displays interactive elements at the message level.
+ * Holds interactive elements like feedback buttons and icon buttons.
  * {@link https://docs.slack.dev/reference/block-kit/blocks/context-actions-block/}
  */
 public class ContextActions {
     /**
-     * A context actions block with feedback buttons.
+     * Context actions block with feedback buttons.
      */
     public static ContextActionsBlock example01() {
-        ContextActionsBlock block = Blocks.contextActions(
-                c -> c.elements(List.of(BlockElements.feedbackButtons(f -> f.actionId("feedback_buttons_1")
+        ContextActionsBlock block = Blocks.contextActions(c ->
+                c.elements(List.of(BlockElements.feedbackButtons(f -> f.actionId("feedback_buttons_1")
                         .positiveButton(FeedbackButtonObject.builder()
                                 .text(BlockCompositions.plainText("👍"))
                                 .value("positive_feedback")
@@ -30,7 +30,7 @@ public class ContextActions {
     }
 
     /**
-     * A context actions block with an icon button.
+     * Context actions block with an icon button.
      */
     public static ContextActionsBlock example02() {
         ContextActionsBlock block =
