@@ -4,10 +4,28 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 7
   - package-ecosystem: "maven"
     directory: "block-kit"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "com.slack.api:*"
+    groups:
+      slack:
+        patterns:
+          - "com.slack.api:*"
+  - package-ecosystem: "maven"
+    directory: "methods"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "com.slack.api:*"
     groups:
       slack:
         patterns:
