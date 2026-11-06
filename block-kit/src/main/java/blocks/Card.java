@@ -17,11 +17,14 @@ public class Card {
     public static CardBlock example01() {
         CardBlock block = Blocks.card(c -> c.icon(BlockElements.imageElement(
                         i -> i.imageUrl("https://picsum.photos/36/36").altText("Icon")))
-                .title(BlockCompositions.markdownText("Lumon Industries"))
-                .subtitle(BlockCompositions.markdownText("Committed to work-life balance"))
+                .title(BlockCompositions.markdownText(
+                        mt -> mt.text("Lumon Industries").verbatim(false)))
+                .subtitle(BlockCompositions.markdownText(
+                        mt -> mt.text("Committed to work-life balance").verbatim(false)))
                 .heroImage(BlockElements.imageElement(
                         i -> i.imageUrl("https://picsum.photos/400/300").altText("Sample hero image")))
-                .body(BlockCompositions.markdownText("Please enjoy each card equally."))
+                .body(BlockCompositions.markdownText(
+                        mt -> mt.text("Please enjoy each card equally.").verbatim(false)))
                 .actions(List.of(BlockElements.button(b -> b.text(BlockCompositions.plainText(
                                 pt -> pt.text("Action Button").emoji(false)))
                         .actionId("button_action")))));

@@ -19,33 +19,44 @@ public class Carousel {
                 Blocks.card(card -> card.blockId("carousel-card-1")
                         .icon(BlockElements.imageElement(
                                 i -> i.imageUrl("https://picsum.photos/36/36").altText("Icon")))
-                        .title(BlockCompositions.markdownText("MDR"))
-                        .subtitle(BlockCompositions.markdownText("Refining data files"))
+                        .title(BlockCompositions.markdownText(
+                                mt -> mt.text("MDR").verbatim(false)))
+                        .subtitle(BlockCompositions.markdownText(
+                                mt -> mt.text("Refining data files").verbatim(false)))
                         .heroImage(BlockElements.imageElement(
                                 i -> i.imageUrl("https://picsum.photos/400/300").altText("Sample hero image")))
-                        .body(BlockCompositions.markdownText("Blue badge required to gain access."))
+                        .body(BlockCompositions.markdownText(mt ->
+                                mt.text("Blue badge required to gain access.").verbatim(false)))
                         .actions(List.of(BlockElements.button(b -> b.text(BlockCompositions.plainText(
                                         pt -> pt.text("Action Button").emoji(false)))
                                 .actionId("button_action_1"))))),
                 Blocks.card(card -> card.blockId("carousel-card-2")
                         .icon(BlockElements.imageElement(
                                 i -> i.imageUrl("https://picsum.photos/36/36").altText("Icon")))
-                        .title(BlockCompositions.markdownText("O&D"))
-                        .subtitle(BlockCompositions.markdownText("Storage, maintenance, and rotation of art pieces"))
+                        .title(BlockCompositions.markdownText(
+                                mt -> mt.text("O&D").verbatim(false)))
+                        .subtitle(BlockCompositions.markdownText(
+                                mt -> mt.text("Storage, maintenance, and rotation of art pieces")
+                                        .verbatim(false)))
                         .heroImage(BlockElements.imageElement(
                                 i -> i.imageUrl("https://picsum.photos/400/300").altText("Sample hero image")))
-                        .body(BlockCompositions.markdownText("Green badge required to gain access."))
+                        .body(BlockCompositions.markdownText(mt ->
+                                mt.text("Green badge required to gain access.").verbatim(false)))
                         .actions(List.of(BlockElements.button(b -> b.text(BlockCompositions.plainText(
                                         pt -> pt.text("Action Button").emoji(false)))
                                 .actionId("button_action_2"))))),
                 Blocks.card(card -> card.blockId("carousel-card-3")
                         .icon(BlockElements.imageElement(
                                 i -> i.imageUrl("https://picsum.photos/36/36").altText("Icon")))
-                        .title(BlockCompositions.markdownText("Wellness Center"))
-                        .subtitle(BlockCompositions.markdownText("Wellness sessions"))
+                        .title(BlockCompositions.markdownText(
+                                mt -> mt.text("Wellness Center").verbatim(false)))
+                        .subtitle(BlockCompositions.markdownText(
+                                mt -> mt.text("Wellness sessions").verbatim(false)))
                         .heroImage(BlockElements.imageElement(
                                 i -> i.imageUrl("https://picsum.photos/400/300").altText("Sample hero image")))
-                        .body(BlockCompositions.markdownText("Please take a seat in the waiting room until called."))
+                        .body(BlockCompositions.markdownText(
+                                mt -> mt.text("Please take a seat in the waiting room until called.")
+                                        .verbatim(false)))
                         .actions(List.of(BlockElements.button(b -> b.text(BlockCompositions.plainText(
                                         pt -> pt.text("Action Button").emoji(false)))
                                 .actionId("button_action_3"))))))));
