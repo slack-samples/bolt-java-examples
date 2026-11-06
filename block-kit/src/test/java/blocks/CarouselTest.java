@@ -26,11 +26,13 @@ public class CarouselTest {
                   },
                   "title": {
                     "type": "mrkdwn",
-                    "text": "MDR"
+                    "text": "MDR",
+                    "verbatim": false
                   },
                   "subtitle": {
                     "type": "mrkdwn",
-                    "text": "Refining data files"
+                    "text": "Refining data files",
+                    "verbatim": false
                   },
                   "hero_image": {
                     "type": "image",
@@ -39,7 +41,8 @@ public class CarouselTest {
                   },
                   "body": {
                     "type": "mrkdwn",
-                    "text": "Blue badge required to gain access."
+                    "text": "Blue badge required to gain access.",
+                    "verbatim": false
                   },
                   "actions": [
                     {
@@ -63,11 +66,13 @@ public class CarouselTest {
                   },
                   "title": {
                     "type": "mrkdwn",
-                    "text": "O&D"
+                    "text": "O&D",
+                    "verbatim": false
                   },
                   "subtitle": {
                     "type": "mrkdwn",
-                    "text": "Storage, maintenance, and rotation of art pieces"
+                    "text": "Storage, maintenance, and rotation of art pieces",
+                    "verbatim": false
                   },
                   "hero_image": {
                     "type": "image",
@@ -76,7 +81,8 @@ public class CarouselTest {
                   },
                   "body": {
                     "type": "mrkdwn",
-                    "text": "Green badge required to gain access."
+                    "text": "Green badge required to gain access.",
+                    "verbatim": false
                   },
                   "actions": [
                     {
@@ -100,11 +106,13 @@ public class CarouselTest {
                   },
                   "title": {
                     "type": "mrkdwn",
-                    "text": "Wellness Center"
+                    "text": "Wellness Center",
+                    "verbatim": false
                   },
                   "subtitle": {
                     "type": "mrkdwn",
-                    "text": "Wellness sessions"
+                    "text": "Wellness sessions",
+                    "verbatim": false
                   },
                   "hero_image": {
                     "type": "image",
@@ -113,7 +121,8 @@ public class CarouselTest {
                   },
                   "body": {
                     "type": "mrkdwn",
-                    "text": "Please take a seat in the waiting room until called."
+                    "text": "Please take a seat in the waiting room until called.",
+                    "verbatim": false
                   },
                   "actions": [
                     {
