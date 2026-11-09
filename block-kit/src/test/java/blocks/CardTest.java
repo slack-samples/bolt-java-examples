@@ -22,11 +22,13 @@ public class CardTest {
               },
               "title": {
                 "type": "mrkdwn",
-                "text": "Lumon Industries"
+                "text": "Lumon Industries",
+                "verbatim": false
               },
               "subtitle": {
                 "type": "mrkdwn",
-                "text": "Committed to work-life balance"
+                "text": "Committed to work-life balance",
+                "verbatim": false
               },
               "hero_image": {
                 "type": "image",
@@ -35,7 +37,8 @@ public class CardTest {
               },
               "body": {
                 "type": "mrkdwn",
-                "text": "Please enjoy each card equally."
+                "text": "Please enjoy each card equally.",
+                "verbatim": false
               },
               "actions": [
                 {
