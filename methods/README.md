@@ -16,6 +16,13 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 ## What's on call
 
+### admin
+
+- **[admin.slackbot.skills.list](https://docs.slack.dev/reference/methods/admin.slackbot.skills.list)**: Lists metadata for skills owned by the organization, including invite-only skills. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsList.java).
+- **[admin.slackbot.skills.publish](https://docs.slack.dev/reference/methods/admin.slackbot.skills.publish)**: Publishes Slackbot skills to an organization's catalog. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsPublish.java).
+- **[admin.slackbot.skills.setAutoEnabled](https://docs.slack.dev/reference/methods/admin.slackbot.skills.setAutoEnabled)**: Sets who a Slackbot skill is automatically turned on for. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsSetAutoEnabled.java).
+- **[admin.slackbot.skills.unpublish](https://docs.slack.dev/reference/methods/admin.slackbot.skills.unpublish)**: Removes Slackbot skills from the org catalog, preserving access, libraries, and deployments. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsUnpublish.java).
+
 ### agents
 
 - **[agents.conversations.archive](https://docs.slack.dev/reference/methods/agents.conversations.archive)**: Archive a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsArchive.java).
@@ -42,4 +49,14 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 ### chat
 
 - **[chat.postMessage](https://docs.slack.dev/reference/methods/chat.postmessage)**: Sends a message to a channel. [Implementation](./src/main/java/chat/ChatPostMessage.java).
+
+### slackbot
+
+- **[slackbot.skills.create](https://docs.slack.dev/reference/methods/slackbot.skills.create)**: Creates a skill from markdown instructions, or turns an existing canvas the caller owns into a skill. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsCreate.java).
+- **[slackbot.skills.delete](https://docs.slack.dev/reference/methods/slackbot.skills.delete)**: Deletes a Slackbot skill and its canvas, and removes it from every library, skill set, and the org catalog. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsDelete.java).
+- **[slackbot.skills.info](https://docs.slack.dev/reference/methods/slackbot.skills.info)**: Returns one Slackbot skill, including its instructions. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsInfo.java).
+- **[slackbot.skills.library.add](https://docs.slack.dev/reference/methods/slackbot.skills.library.add)**: Turns a skill on in the caller's personal library. [Implementation](./src/main/java/slackbot/skills/library/SlackbotSkillsLibraryAdd.java).
+- **[slackbot.skills.library.remove](https://docs.slack.dev/reference/methods/slackbot.skills.library.remove)**: Turns a skill off in the caller's personal library. [Implementation](./src/main/java/slackbot/skills/library/SlackbotSkillsLibraryRemove.java).
+- **[slackbot.skills.list](https://docs.slack.dev/reference/methods/slackbot.skills.list)**: Lists Slackbot skills from the caller's point of view. Instructions are not included. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsList.java).
+- **[slackbot.skills.update](https://docs.slack.dev/reference/methods/slackbot.skills.update)**: Changes a Slackbot skill's instructions or metadata. Only the inputs you send are changed; a call that changes nothing succeeds without writing. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsUpdate.java).
 
