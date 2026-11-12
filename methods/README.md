@@ -19,6 +19,7 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 ### admin
 
 - **[admin.slackbot.skills.list](https://docs.slack.dev/reference/methods/admin.slackbot.skills.list)**: Lists metadata for skills owned by the organization, including invite-only skills. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsList.java).
+- **[admin.slackbot.skills.publish](https://docs.slack.dev/reference/methods/admin.slackbot.skills.publish)**: Publishes Slackbot skills to an organization's catalog. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsPublish.java).
 
 ### agents
 
