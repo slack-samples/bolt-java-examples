@@ -43,3 +43,7 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 - **[chat.postMessage](https://docs.slack.dev/reference/methods/chat.postmessage)**: Sends a message to a channel. [Implementation](./src/main/java/chat/ChatPostMessage.java).
 
+### slackbot
+
+- **[slackbot.skills.create](https://docs.slack.dev/reference/methods/slackbot.skills.create)**: Creates a skill from markdown instructions, or turns an existing canvas the caller owns into a skill. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsCreate.java).
+
