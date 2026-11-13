@@ -18,6 +18,7 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 ### admin
 
+- **[admin.apps.mcp.servers.list](https://docs.slack.dev/reference/methods/admin.apps.mcp.servers.list)**: List third-party app MCP servers approved for an organization. [Implementation](./src/main/java/admin/apps/mcp/servers/AdminAppsMcpServersList.java).
 - **[admin.slackbot.skills.list](https://docs.slack.dev/reference/methods/admin.slackbot.skills.list)**: Lists metadata for skills owned by the organization, including invite-only skills. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsList.java).
 - **[admin.slackbot.skills.publish](https://docs.slack.dev/reference/methods/admin.slackbot.skills.publish)**: Publishes Slackbot skills to an organization's catalog. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsPublish.java).
 - **[admin.slackbot.skills.setAutoEnabled](https://docs.slack.dev/reference/methods/admin.slackbot.skills.setAutoEnabled)**: Sets who a Slackbot skill is automatically turned on for. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsSetAutoEnabled.java).
