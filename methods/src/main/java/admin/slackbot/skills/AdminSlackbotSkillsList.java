@@ -21,10 +21,6 @@ public class AdminSlackbotSkillsList {
         AdminSlackbotSkillsListRequest request = AdminSlackbotSkillsListRequest.builder()
                 .category("productivity")
                 .creatorIds(Arrays.asList("U0123ABCD"))
-                .publishStatus("all")
-                .autoEnabledStatus("all")
-                .sort("name")
-                .sortDir("asc")
                 .build();
         AdminSlackbotSkillsListResponse response = methods.adminSlackbotSkillsList(request);
 
