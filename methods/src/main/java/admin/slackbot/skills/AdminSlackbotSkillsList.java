@@ -20,7 +20,6 @@ public class AdminSlackbotSkillsList {
         // Call the admin.slackbot.skills.list method
         AdminSlackbotSkillsListRequest request = AdminSlackbotSkillsListRequest.builder()
                 .category("productivity")
-                .limit(100)
                 .creatorIds(Arrays.asList("U0123ABCD"))
                 .publishStatus("all")
                 .autoEnabledStatus("all")
