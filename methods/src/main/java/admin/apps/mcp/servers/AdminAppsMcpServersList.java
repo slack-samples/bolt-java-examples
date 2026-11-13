@@ -18,7 +18,7 @@ public class AdminAppsMcpServersList {
 
         // Call the admin.apps.mcp.servers.list method
         AdminAppsMcpServersListRequest request =
-                AdminAppsMcpServersListRequest.builder().limit(100).build();
+                AdminAppsMcpServersListRequest.builder().build();
         AdminAppsMcpServersListResponse response = methods.adminAppsMcpServersList(request);
 
         // Inspect the response
