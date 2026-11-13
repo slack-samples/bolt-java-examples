@@ -30,6 +30,7 @@ Read the [docs](https://docs.slack.dev/block-kit/) to learn concepts behind thes
 - **[Broadcast](https://docs.slack.dev/reference/block-kit/block-elements/broadcast-element)**: Displays a broadcast mention such as here, channel, or everyone. [Implementation](./src/main/java/elements/Broadcast.java).
 - **[Button](https://docs.slack.dev/reference/block-kit/block-elements/button-element)**: Allows users a direct path to performing basic actions. [Implementation](./src/main/java/elements/Button.java).
 - **[Channel](https://docs.slack.dev/reference/block-kit/block-elements/channel-element)**: Renders as a mention of a channel. [Implementation](./src/main/java/elements/Channel.java).
+- **[Checkboxes](https://docs.slack.dev/reference/block-kit/block-elements/checkboxes-element)**: Allows users to choose multiple items from a list of options. [Implementation](./src/main/java/elements/Checkboxes.java).
 - **[Color](https://docs.slack.dev/reference/block-kit/block-elements/color-element)**: Displays a color swatch from a hex value. [Implementation](./src/main/java/elements/Color.java).
 - **[Date](https://docs.slack.dev/reference/block-kit/block-elements/date-element)**: Displays a formatted, localized date. [Implementation](./src/main/java/elements/Date.java).
 - **[Date picker](https://docs.slack.dev/reference/block-kit/block-elements/date-picker-element)**: Allows users to select a date from a calendar style UI. [Implementation](./src/main/java/elements/DatePicker.java).
