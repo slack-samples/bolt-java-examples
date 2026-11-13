@@ -19,11 +19,11 @@ public class AdminAppsMcpServersPermissionsSet {
 
         // Call the admin.apps.mcp.servers.permissions.set method
         AdminAppsMcpServersPermissionsSetRequest request = AdminAppsMcpServersPermissionsSetRequest.builder()
-                .appId("A0123ABCD")
-                .serverId("Amcp0456EFGH")
+                .appId("A0000000001")
+                .serverId("Amcp0000000001")
                 .permissionType("named_entities")
-                .userIds(Arrays.asList("U0123ABCD"))
-                .usergroupIds(Arrays.asList("S0123ABCD"))
+                .userIds(Arrays.asList("U00000001", "U00000002"))
+                .usergroupIds(Arrays.asList("S00000001", "S00000002"))
                 .build();
         AdminAppsMcpServersPermissionsSetResponse response = methods.adminAppsMcpServersPermissionsSet(request);
 
