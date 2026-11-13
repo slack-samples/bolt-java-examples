@@ -16,6 +16,10 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 ## What's on call
 
+### admin
+
+- **[admin.slackbot.skills.list](https://docs.slack.dev/reference/methods/admin.slackbot.skills.list)**: Lists metadata for skills owned by the organization, including invite-only skills. [Implementation](./src/main/java/admin/slackbot/skills/AdminSlackbotSkillsList.java).
+
 ### agents
 
 - **[agents.conversations.archive](https://docs.slack.dev/reference/methods/agents.conversations.archive)**: Archive a code channel. [Implementation](./src/main/java/agents/conversations/AgentsConversationsArchive.java).
