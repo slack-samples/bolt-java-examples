@@ -5,7 +5,6 @@ import com.slack.api.methods.MethodsClient;
 import com.slack.api.methods.SlackApiException;
 import com.slack.api.methods.request.slackbot.skills.SlackbotSkillsUpdateRequest;
 import com.slack.api.methods.response.slackbot.skills.SlackbotSkillsUpdateResponse;
-import com.slack.api.model.slackbot.SkillMcpServer;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -26,7 +25,7 @@ public class SlackbotSkillsUpdate {
                 .description("Reviews information from Slack and your calendar to suggest priorities for the day.")
                 .category("productivity")
                 .examplePrompt("Run {skill} for today")
-                .mcpServers(Arrays.asList(SkillMcpServer.builder()
+                .mcpServers(Arrays.asList(SlackbotSkillsUpdateRequest.McpServer.builder()
                         .serviceType("app")
                         .appId("A0123ABCD")
                         .serverId("Amcp0456EFGH")
