@@ -18,7 +18,7 @@ public class AdminAppsMcpServersPermissionsList {
 
         // Call the admin.apps.mcp.servers.permissions.list method
         AdminAppsMcpServersPermissionsListRequest request = AdminAppsMcpServersPermissionsListRequest.builder()
-                .appId("A0123ABCD")
+                .appId("A0000000001")
                 .build();
         AdminAppsMcpServersPermissionsListResponse response = methods.adminAppsMcpServersPermissionsList(request);
 
