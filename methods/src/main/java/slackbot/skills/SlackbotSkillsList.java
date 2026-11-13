@@ -18,9 +18,8 @@ public class SlackbotSkillsList {
 
         // Call the slackbot.skills.list method
         SlackbotSkillsListRequest request = SlackbotSkillsListRequest.builder()
-                .filter("library")
+                .filter("owned")
                 .category("productivity")
-                .limit(100)
                 .build();
         SlackbotSkillsListResponse response = methods.slackbotSkillsList(request);
 
