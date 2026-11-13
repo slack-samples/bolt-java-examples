@@ -47,5 +47,6 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 - **[slackbot.skills.create](https://docs.slack.dev/reference/methods/slackbot.skills.create)**: Creates a skill from markdown instructions, or turns an existing canvas the caller owns into a skill. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsCreate.java).
 - **[slackbot.skills.info](https://docs.slack.dev/reference/methods/slackbot.skills.info)**: Returns one Slackbot skill, including its instructions. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsInfo.java).
+- **[slackbot.skills.list](https://docs.slack.dev/reference/methods/slackbot.skills.list)**: Lists Slackbot skills from the caller's point of view. Instructions are not included. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsList.java).
 - **[slackbot.skills.update](https://docs.slack.dev/reference/methods/slackbot.skills.update)**: Changes a Slackbot skill's instructions or metadata. Only the inputs you send are changed; a call that changes nothing succeeds without writing. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsUpdate.java).
 
