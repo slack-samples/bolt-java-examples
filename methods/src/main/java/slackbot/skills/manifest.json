@@ -11,8 +11,7 @@
   },
   "oauth_config": {
     "scopes": {
-      "bot": ["skills:read", "skills:write"],
-      "user": ["skills:read", "skills:write"]
+      "bot": ["skills:read", "skills:write"]
     }
   },
   "settings": {
