@@ -11,13 +11,12 @@
   },
   "oauth_config": {
     "scopes": {
-      "bot": ["skills:write"],
-      "user": ["skills:write"]
+      "bot": ["skills:write"]
     }
   },
   "settings": {
     "org_deploy_enabled": true,
-    "socket_mode_enabled": true,
+    "socket_mode_enabled": false,
     "token_rotation_enabled": false
   }
 }
