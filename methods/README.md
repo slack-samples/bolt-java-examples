@@ -56,6 +56,7 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 ### oauth
 
 - **[oauth.v2.beginShortTokenRotation](https://docs.slack.dev/reference/methods/oauth.v2.beginShortTokenRotation)**: Begins rotating the secret on an API token with a short secret. [Implementation](./src/main/java/oauth/v2/OAuthV2BeginShortTokenRotation.java).
+- **[oauth.v2.completeShortTokenRotation](https://docs.slack.dev/reference/methods/oauth.v2.completeShortTokenRotation)**: Finishes rotating the secret on an API token with a short secret. [Implementation](./src/main/java/oauth/v2/OAuthV2CompleteShortTokenRotation.java).
 
 ### slackbot
 
