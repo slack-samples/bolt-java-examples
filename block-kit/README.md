@@ -30,6 +30,7 @@ Read the [docs](https://docs.slack.dev/block-kit/) to learn concepts behind thes
 
 - **[Broadcast](https://docs.slack.dev/reference/block-kit/block-elements/broadcast-element)**: Displays a broadcast mention such as here, channel, or everyone. [Implementation](./src/main/java/elements/Broadcast.java).
 - **[Button](https://docs.slack.dev/reference/block-kit/block-elements/button-element)**: Allows users a direct path to performing basic actions. [Implementation](./src/main/java/elements/Button.java).
+- **[Canvas](https://docs.slack.dev/reference/block-kit/block-elements/canvas-element)**: Renders as a link to a canvas. [Implementation](./src/main/java/elements/Canvas.java).
 - **[Channel](https://docs.slack.dev/reference/block-kit/block-elements/channel-element)**: Renders as a mention of a channel. [Implementation](./src/main/java/elements/Channel.java).
 - **[Color](https://docs.slack.dev/reference/block-kit/block-elements/color-element)**: Displays a color swatch from a hex value. [Implementation](./src/main/java/elements/Color.java).
 - **[Date](https://docs.slack.dev/reference/block-kit/block-elements/date-element)**: Displays a formatted, localized date. [Implementation](./src/main/java/elements/Date.java).
