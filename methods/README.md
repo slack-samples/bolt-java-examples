@@ -53,6 +53,10 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 - **[chat.postMessage](https://docs.slack.dev/reference/methods/chat.postmessage)**: Sends a message to a channel. [Implementation](./src/main/java/chat/ChatPostMessage.java).
 
+### oauth
+
+- **[oauth.v2.beginShortTokenRotation](https://docs.slack.dev/reference/methods/oauth.v2.beginShortTokenRotation)**: Begins rotating the secret on an API token with a short secret. [Implementation](./src/main/java/oauth/v2/OAuthV2BeginShortTokenRotation.java).
+
 ### slackbot
 
 - **[slackbot.skills.create](https://docs.slack.dev/reference/methods/slackbot.skills.create)**: Creates a skill from markdown instructions, or turns an existing canvas the caller owns into a skill. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsCreate.java).
