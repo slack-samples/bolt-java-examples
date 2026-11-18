@@ -53,6 +53,10 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 - **[chat.postMessage](https://docs.slack.dev/reference/methods/chat.postmessage)**: Sends a message to a channel. [Implementation](./src/main/java/chat/ChatPostMessage.java).
 
+### entity
+
+- **[entity.presentComments](https://docs.slack.dev/reference/methods/entity.presentComments)**: Provide comments for Work Objects. Apps call this method to send per-user flexpane comment data to the client. [Implementation](./src/main/java/entity/EntityPresentComments.java).
+
 ### slackbot
 
 - **[slackbot.skills.create](https://docs.slack.dev/reference/methods/slackbot.skills.create)**: Creates a skill from markdown instructions, or turns an existing canvas the caller owns into a skill. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsCreate.java).
