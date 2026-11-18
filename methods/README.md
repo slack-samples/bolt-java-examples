@@ -55,6 +55,7 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 ### entity
 
+- **[entity.acknowledgeCommentAction](https://docs.slack.dev/reference/methods/entity.acknowledgeCommentAction)**: Acknowledge a comment post, edit, or delete on a Work Object. Apps call this method to confirm they have processed a comment action. [Implementation](./src/main/java/entity/EntityAcknowledgeCommentAction.java).
 - **[entity.presentComments](https://docs.slack.dev/reference/methods/entity.presentComments)**: Provide comments for Work Objects. Apps call this method to send per-user flexpane comment data to the client. [Implementation](./src/main/java/entity/EntityPresentComments.java).
 
 ### slackbot
