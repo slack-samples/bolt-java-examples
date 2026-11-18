@@ -19,8 +19,10 @@ public class ChatStartStream {
         // Call the chat.startStream method
         ChatStartStreamRequest request = ChatStartStreamRequest.builder()
                 .channel("C123ABC456")
-                .threadTs("1234567890.123456")
-                .markdownText("Let me look into that")
+                .markdownText("**This is bold text**")
+                .threadTs("1721609600.123456")
+                .recipientUserId("U0123456789")
+                .recipientTeamId("T0123456789")
                 .build();
         ChatStartStreamResponse response = methods.chatStartStream(request);
 

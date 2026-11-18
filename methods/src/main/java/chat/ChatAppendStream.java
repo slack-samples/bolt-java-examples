@@ -20,7 +20,7 @@ public class ChatAppendStream {
         ChatAppendStreamRequest request = ChatAppendStreamRequest.builder()
                 .channel("C123ABC456")
                 .ts("1234567890.123456")
-                .markdownText(" — reading the logs now")
+                .markdownText("**This is bold text**")
                 .build();
         ChatAppendStreamResponse response = methods.chatAppendStream(request);
 
