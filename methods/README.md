@@ -43,6 +43,7 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 ### assistant
 
 - **[assistant.search.context](https://docs.slack.dev/reference/methods/assistant.search.context)**: Searches messages, files, channels and users across your Slack organization. [Implementation](./src/main/java/assistant/search/AssistantSearchContext.java).
+- **[assistant.search.info](https://docs.slack.dev/reference/methods/assistant.search.info)**: Returns search capabilities on a given team. [Implementation](./src/main/java/assistant/search/AssistantSearchInfo.java).
 
 ### blocks
 
