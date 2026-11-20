@@ -40,6 +40,16 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 - **[agents.sessions.rename](https://docs.slack.dev/reference/methods/agents.sessions.rename)**: Rename an agent session. [Implementation](./src/main/java/agents/sessions/AgentsSessionsRename.java).
 - **[agents.sessions.setStatus](https://docs.slack.dev/reference/methods/agents.sessions.setStatus)**: Set an agent session's lifecycle status, creating the session if needed. [Implementation](./src/main/java/agents/sessions/AgentsSessionsSetStatus.java).
 
+### apps
+
+- **[apps.icon.set](https://docs.slack.dev/reference/methods/apps.icon.set)**: Sets the app icon. [Implementation](./src/main/java/apps/icon/AppsIconSet.java).
+- **[apps.managed.permissions.set](https://docs.slack.dev/reference/methods/apps.managed.permissions.set)**: Set who can interact with a managed app. Lets the builder who created a managed app on a partner platform configure the app's permissions, using a user token or bot token from the manager app. Permissions can only be set before the app is installed: if the app is already installed, this method makes no change and returns the app's current permissions. [Implementation](./src/main/java/apps/managed/permissions/AppsManagedPermissionsSet.java).
+
+### assistant
+
+- **[assistant.search.context](https://docs.slack.dev/reference/methods/assistant.search.context)**: Searches messages, files, channels and users across your Slack organization. [Implementation](./src/main/java/assistant/search/AssistantSearchContext.java).
+- **[assistant.search.info](https://docs.slack.dev/reference/methods/assistant.search.info)**: Returns search capabilities on a given team. [Implementation](./src/main/java/assistant/search/AssistantSearchInfo.java).
+
 ### blocks
 
 - **[blocks.validate](https://docs.slack.dev/reference/methods/blocks.validate)**: Validates blocks, messages, and views Block Kit JSON payloads. [Implementation](./src/main/java/blocks/BlocksValidate.java).
