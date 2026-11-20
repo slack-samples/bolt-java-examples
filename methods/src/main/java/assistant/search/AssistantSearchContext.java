@@ -20,6 +20,7 @@ public class AssistantSearchContext {
         // Call the assistant.search.context method
         AssistantSearchContextRequest request = AssistantSearchContextRequest.builder()
                 .query("What is the latest on project Gizmo?")
+                .termClauses(Arrays.asList("project gizmo"))
                 .actionToken("12345.98765.abcd2358fdea")
                 .channelTypes(Arrays.asList("public_channel", "private_channel", "mpim", "im"))
                 .contentTypes(Arrays.asList("messages", "files", "channels"))
