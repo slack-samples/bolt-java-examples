@@ -56,6 +56,10 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 - **[chat.startStream](https://docs.slack.dev/reference/methods/chat.startStream)**: Starts a new streaming conversation. [Implementation](./src/main/java/chat/ChatStartStream.java).
 - **[chat.stopStream](https://docs.slack.dev/reference/methods/chat.stopStream)**: Stops a streaming conversation. [Implementation](./src/main/java/chat/ChatStopStream.java).
 
+### oauth
+
+- **[oauth.v2.user.access](https://docs.slack.dev/reference/methods/oauth.v2.user.access)**: Exchanges a temporary OAuth verifier code for a user access token. [Implementation](./src/main/java/oauth/v2/user/OAuthV2UserAccess.java).
+
 ### slackbot
 
 - **[slackbot.skills.create](https://docs.slack.dev/reference/methods/slackbot.skills.create)**: Creates a skill from markdown instructions, or turns an existing canvas the caller owns into a skill. [Implementation](./src/main/java/slackbot/skills/SlackbotSkillsCreate.java).
