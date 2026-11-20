@@ -40,6 +40,10 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 - **[agents.sessions.rename](https://docs.slack.dev/reference/methods/agents.sessions.rename)**: Rename an agent session. [Implementation](./src/main/java/agents/sessions/AgentsSessionsRename.java).
 - **[agents.sessions.setStatus](https://docs.slack.dev/reference/methods/agents.sessions.setStatus)**: Set an agent session's lifecycle status, creating the session if needed. [Implementation](./src/main/java/agents/sessions/AgentsSessionsSetStatus.java).
 
+### apps
+
+- **[apps.icon.set](https://docs.slack.dev/reference/methods/apps.icon.set)**: Sets the app icon. [Implementation](./src/main/java/apps/icon/AppsIconSet.java).
+
 ### assistant
 
 - **[assistant.search.context](https://docs.slack.dev/reference/methods/assistant.search.context)**: Searches messages, files, channels and users across your Slack organization. [Implementation](./src/main/java/assistant/search/AssistantSearchContext.java).
