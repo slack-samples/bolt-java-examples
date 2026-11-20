@@ -44,6 +44,11 @@ $ mvn compile exec:java -Dexec.mainClass=chat.ChatPostMessage  # Make the reques
 
 - **[apps.icon.set](https://docs.slack.dev/reference/methods/apps.icon.set)**: Sets the app icon. [Implementation](./src/main/java/apps/icon/AppsIconSet.java).
 
+### assistant
+
+- **[assistant.search.context](https://docs.slack.dev/reference/methods/assistant.search.context)**: Searches messages, files, channels and users across your Slack organization. [Implementation](./src/main/java/assistant/search/AssistantSearchContext.java).
+- **[assistant.search.info](https://docs.slack.dev/reference/methods/assistant.search.info)**: Returns search capabilities on a given team. [Implementation](./src/main/java/assistant/search/AssistantSearchInfo.java).
+
 ### blocks
 
 - **[blocks.validate](https://docs.slack.dev/reference/methods/blocks.validate)**: Validates blocks, messages, and views Block Kit JSON payloads. [Implementation](./src/main/java/blocks/BlocksValidate.java).
